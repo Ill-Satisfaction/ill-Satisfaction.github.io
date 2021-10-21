@@ -36,7 +36,6 @@ My career goals are to build tools to improve telepresence and personal autonomy
 ## Publications
  - [Developing a Mixed Reality Application to Increase Autonomy and Improve Communication in Extravehicular Activity Procedures](https://drive.google.com/file/d/1ha1JmLZiWjiWj08g5eygLkBKnXBlRH4w/view)
  - [ARSIS 4.0 - Augmented Reality Space Informatics System](https://scholarworks.boisestate.edu/under_showcase_2021/13/)
- - [ARSIS 4.0 - Augmented Reality Space Informatics System](https://event.fourwaves.com/icur2021/abstracts/67ae0b00-72e7-45de-84b0-35b25a08628b)
 
 ## Misc.
  - [UI Portfolio](https://drive.google.com/drive/folders/1udLUYkC2TVD_KmauKkFPYWmEx4y9IGzs?usp=sharing)
