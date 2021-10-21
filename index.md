@@ -1,7 +1,3 @@
-# Under Construction!
-
-## Summary
-
 Welcome to my quick-and-dirty portfolio! please don't mind the mess. 
 
 Im a Senior GIMM (Games, Interactive Media, and Mobile) Undergraduate Student at Boise State University, with a minor in Computer Science, and a Business Fundamentals certificate from Harvard Business School Online. I'm mostly into XR (tools mainly, but games too!), but have done my fair share of android development, graphic design, 3d design, java programing, database work, UI, customer service, management, and other odds and ends.
