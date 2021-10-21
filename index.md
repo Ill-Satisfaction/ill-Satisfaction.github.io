@@ -26,10 +26,10 @@ My career goals are to build tools to improve telepresence and personal autonomy
  - Boise State University, est. grad. 2022 - GIMM, CS minor
 
 ## Extracurricular Projects
- - nasa suits
- - iForeman
- - varscent
- - pipeAR
+ - [BSU NASA S.U.I.T.S, 2020. Project Lead, 2021-Present](https://sites.google.com/view/calebcram-gamedeveloper/impactful-projects?authuser=2)
+ - iForeman UX Designer and Project Manager, 2021
+ - Varscent Unity VR Developer, 2020
+ - [PipeAR Team Coordinator, 2020 (scroll down)](https://sites.google.com/view/calebcram-gamedeveloper/impactful-projects?authuser=2)
 
 ## Certifications
  - HBS Online, 2019 - Business Fundamentals Certificate
