@@ -6,12 +6,9 @@ Im a Senior GIMM (Games, Interactive Media, and Mobile) Undergraduate Student at
 
 My career goals are to build tools to improve telepresence and personal autonomy. My dream career is as a product manager or senior dev doing work where XR and Machine Learning meet. That said, I'm down to do anything cool with tech, and to learn along the way!
 
-## Quick Links:
- - [Github](https://github.com/Ill-Satisfaction)
-
- - [Linkedin](https://www.linkedin.com/in/akiah-tullis-6a8101179/)
-
+## Contact:
  - [akiahtullis@u.boisestate.edu](akiahtullis@u.boisestate.edu)
+ - [Linkedin](https://www.linkedin.com/in/akiah-tullis-6a8101179/)
 
 ## Education
  - Meridian Technical Charter High School, grad. 2018 - Web and Media Design
