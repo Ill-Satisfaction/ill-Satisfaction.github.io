@@ -4,26 +4,45 @@
 
 Welcome to my quick-and-dirty portfolio! please don't mind the mess. 
 
-Im a Senior GIMM (Games, Interactive Media, and Mobile) Student at Boise State University, with a minor in Computer Science, and a business fundamentals certificate from Harvard Business School Online. I'm mostly into XR (mostly tools, but games too!), but have done my fair share of android development, graphic design, 3d design, java programing, database work, UI, customer service, and management.
+Im a Senior GIMM (Games, Interactive Media, and Mobile) Undergraduate Student at Boise State University, with a minor in Computer Science, and a Business Fundamentals certificate from Harvard Business School Online. I'm mostly into XR (tools mainly, but games too!), but have done my fair share of android development, graphic design, 3d design, java programing, database work, UI, customer service, management, and other odds and ends.
 
 My career goals are to build tools to improve telepresence and personal autonomy. That said, I'm down to do anything cool with tech, and to learn along the way!
 
 ## Quick Links:
 
-[UI Portfolio](https://drive.google.com/drive/folders/1udLUYkC2TVD_KmauKkFPYWmEx4y9IGzs?usp=sharing)
+ - [UI Portfolio](https://drive.google.com/drive/folders/1udLUYkC2TVD_KmauKkFPYWmEx4y9IGzs?usp=sharing)
 
-[Digital Art](https://drive.google.com/drive/folders/1iIDcPVIe7mZsgNjVMMsYwuUCIs4TGTfe?usp=sharing)
+ - [Digital Art](https://drive.google.com/drive/folders/1iIDcPVIe7mZsgNjVMMsYwuUCIs4TGTfe?usp=sharing)
 
-[Github](https://github.com/Ill-Satisfaction)
+ - [Github](https://github.com/Ill-Satisfaction)
 
-[Linkedin](https://www.linkedin.com/in/akiah-tullis-6a8101179/)
+ - [Linkedin](https://www.linkedin.com/in/akiah-tullis-6a8101179/)
 
-[akiahtullis@u.boisestate.edu](akiahtullis@u.boisestate.edu)
+ - [akiahtullis@u.boisestate.edu](akiahtullis@u.boisestate.edu)
 
 ## Education
-## Experience
-## Competitions
-## Projects
+
+ - Meridian Technical Charter High School, grad. 2018 - Web and Media Design
+ - Boise State University, est. grad. 2022 - GIMM, CS minor
+
+## Extracurricular Projects
+ - nasa suits
+ - iForeman
+ - varscent
+ - pipeAR
+
 ## Certifications
+ - HBS Online, 2019 - Business Fundamentals Certificate
+ - Codepath, 2020 - Remote Android Development
+ - Adobe Certified Associate, 2017 - Adobe Photoshop, Illustrator, Dreamweaver
+ - OSHA, 2017 - 10 Hour Training Course
+
+## Job Experience
+
+ - Nerdy Dragon, 2017-2018 - UI design and customer service/negotiation
+ - Boise State University, 2020 - Peer Mentoring
+
 ## Publications
-## Skills
+ - [Developing a Mixed Reality Application to Increase Autonomy and Improve Communication in Extravehicular Activity Procedures](https://drive.google.com/file/d/1ha1JmLZiWjiWj08g5eygLkBKnXBlRH4w/view)
+ - [ARSIS 4.0 - Augmented Reality Space Informatics System](https://scholarworks.boisestate.edu/under_showcase_2021/13/)
+ - [ARSIS 4.0 - Augmented Reality Space Informatics System](https://event.fourwaves.com/icur2021/abstracts/67ae0b00-72e7-45de-84b0-35b25a08628b)
