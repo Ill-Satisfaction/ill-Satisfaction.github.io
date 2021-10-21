@@ -27,7 +27,7 @@ My career goals are to build tools to improve telepresence and personal autonomy
 
 ## Extracurricular Projects
  - [BSU NASA S.U.I.T.S, 2020. Project Lead, 2021-Present](https://sites.google.com/view/calebcram-gamedeveloper/impactful-projects?authuser=2)
- - iForeman UX Designer and Project Manager, 2021
+ - [iForeman UX Designer and Project Manager, 2021](https://drive.google.com/drive/folders/1KgNlAe_2yf9mPgvR_Z5l3uYks0CpEyo-?usp=sharing)
  - Varscent Unity VR Developer, 2020
  - [PipeAR Team Coordinator, 2020 (scroll down)](https://sites.google.com/view/calebcram-gamedeveloper/impactful-projects?authuser=2)
 
