@@ -1,7 +1,7 @@
 #mugshot {
     margin:auto;
 
-    background-image: url("../img/about/mugshot.JPG");
+    background-image: url("../img/about/mugshot.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
