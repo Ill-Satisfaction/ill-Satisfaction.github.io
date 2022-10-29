@@ -1,0 +1,37 @@
+#splash {
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 20rem;
+}
+
+.nasa-suits {
+    background-image: url("../img/nasa-suits/splash.JPG");
+}
+
+.puppet-knight {
+    background-image: url("../img/puppet-knight/splash.PNG");
+}
+
+.dino-wars {
+    background-image: url("../img/dino-wars/splash.PNG");
+}
+
+.images {
+    display:flex;
+}
+
+    .images p {
+        text-align: center !important;
+    }
+
+.image-lightbox img {
+    width:95%;
+    border-radius:25%;
+}
+
+.rounded img {
+    border-radius:50% !important;
+}

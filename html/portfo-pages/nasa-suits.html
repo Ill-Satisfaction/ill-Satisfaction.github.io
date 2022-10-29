@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>akiah - nasa suits</title>
+    <meta name="description" content="portfolio page for akiah tullis">
+    <meta name="author" content="akiah tullis">
+
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/portfo-page.css">
+    <!--<link rel="icon" type="image/png" href="images/favicon-16.png">-->
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div id="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/atullis/">
+                <img src="../../img/about/socials/linkedin.PNG" class="social-icon" />
+            </a>
+            <a target="_blank" href="https://github.com/Ill-Satisfaction">
+                <img src="../../img/about/socials/github.PNG" class="social-icon" />
+            </a>
+        </div>
+        <a href="../../index.html">
+            <h1>akiah tullis</h1>
+        </a>
+        <nav>
+            <ul>
+                <a href="../../index.html">
+                <li><< home</li>
+                </a>
+                <li id="current">nasa suits</li>
+            </ul>
+        </nav>
+        <br />
+    </div>
+    <br />
+
+    <div class="section squish-wide">
+        <div id="splash" class="nasa-suits squish"></div>
+    </div>
+
+    <div class="section squish">
+        <h2>NASA SUITS ARSIS 5.0</h2>
+        <p>Designer, XR Developer, Team Lead</p>
+        <p><strong>Winter 2021 - Summer 2022</strong></p>
+        <p>
+            SUITS is an annual design challenge hosted by NASA to design
+            AR tools for astronauts on EVAs
+            <a target="_blank" href="https://microgravityuniversity.jsc.nasa.gov/nasasuits">[Link]</a>.
+            ARSIS 5.0 was Boise State's contribution for the 2021-2022 challenge.
+        </p>
+        <p>
+            Design document:
+            <a href="../../files/ARSIS 5.0 Proposal Technical Section.PDF" download>
+                [Link]
+            </a>
+            .
+        </p>
+        <p>
+            ARSIS overview:
+            <iframe width="85%" height="315" src="https://www.youtube-nocookie.com/embed/X4m33WfXC3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+
+    </div>
+
+    <div class="section squish left">
+        <h2>My involvement</h2>
+        <ul class="list">
+            <li>Led discussions to determine and define design features</li>
+            <li>Primary author of design document - submitted to and approved by NASA</li>
+            <li>Led weekly standups for Agile development</li>
+            <li>Developed navigation features in C# for Microsoft Hololens 2</li>
+        </ul>
+        <p>
+            <br />
+            In other versions of ARSIS, I've worked as a XR developer, designer, and (currently) in an
+            advisory capacity.
+        </p>
+    </div>
+
+    <div class="section squish">
+        <h2>Lessons learned</h2>
+        <p>
+            My time at SUITS is something I remember fondly; it was the first large
+            project that I worked in, and the first serious team that I led. As such
+            I made plenty of mistakes and learned a lot:
+        </p>
+        <p>
+            <strong>I should delegate more</strong><br />
+            Many of my failures came from taking on too much and not relying enough on those
+            around me. This current iteration of the project, ARSIS 6.0, I’ve distributed my
+            old role among team members in preparation for my graduation. I’m also paying more
+            attention to how I might be underutilizing my team.
+        </p>
+        <p>
+            <strong>I need to be better about project scope.</strong> <br />
+
+            Due to Covid and some untimely graduations, we were
+            operating with a very small team for 5.0. I need to be better at prioritizing features
+            and project scope in order to properly lead teams of any size. This year we've recruited
+            a larger team, but I'm still keeping my eye on it.
+        </p>
+        <p>
+            <strong>I need to recognize setbacks sooner and take the initiative.</strong> <br />
+
+            We lost a lot of development time due to bureaucratic concerns. Eventually I realized that
+            they wouldn't get resolved through the university and worked around it, but I could have saved
+            significant resources by doing that earlier.
+        </p>
+    </div>
+
+    <div class="section squish left">
+        <h2>What we did</h2>
+        <p>
+            SUITS has three main goals during a project: submit a design proposal to NASA, perform outreach
+            to the community, and prototype Augmented Reality tools for astronauts. During the 2021-2022
+            year, we largely succeeded on the first two counts.
+        </p>
+        <p>
+            I wrote the majority of a proposal that was accepted by NASA, and it recieved some praise
+            for clarity. Additionally, it was useful for onboarding new members and telling them about
+            the project.
+        </p>
+        <p>
+            We published papers, coordinated with the
+            Discovery Center of Idaho, and otherwise were able to help people understand more about
+            NASA, AR, and SUITS. Additionally, we were able to recruit a sufficient team to be well equipped
+            for the 2022-2023 year, despite operating at severely reduced efficacy.
+        </p>
+        <p>
+            Unfortunately, due to several challenges that I'll get into below, we made a poor showing that
+            year. Brutal scope cutting and intense crunching were required to have a project to show NASA
+            at all.
+        </p>
+        <h3>Challenges</h3>
+        <h4>Reduced team size due to Covid 19.</h4>
+        <p>
+            Covid
+            safety measures hit all student involvement groups hard, and our research group was no exception.
+            We had a significantly reduced team size compared to previous years.
+        </p><p>
+            Our team had to prioritize recruitment over development, and there was a larger-than-usual
+            push for outreach that year. I was personally responsible for bringing two new people onto the
+            team, but they were unable to join until the next project (ARSIS 6.0).
+        </p>
+        <h4>Bureaucratic troubles with version control.</h4>
+        <p>
+            When our old version control solution—Unity Collab—was decommissioned, we were not able to
+            switch to its replacement due to its subscription-based payment model. We lost the bulk of our
+            development time to this issue, and eventually I bit the bullet and bought a few months for
+            the team.
+        </p>
+        <p>
+            This year, I began an sub-project to switch ARSIS from the old singleton design pattern
+            to an observer-based pattern. This should add modularity and enable us to use Github to manage
+            our solution. If successful, we should avoid future reliance on paid VCS solutions.
+        </p>
+        <h4>No original team members.</h4>
+        <p>
+            2022 was the first year after the last member of the original SUITS Challenge Team graduated.
+            While I had spearheaded an effort to document everything we could in advance of her graduation,
+            it was still difficult operating without that guidance.
+        </p>
+    </div>
+
+    <div class="section"><a href="#">[Go to top]</a></div>
+
+
+
+
+    <div class="section squish" id="footer">
+        <hr />
+        <h6>©2022 Akiah Tullis</h6>
+    </div>
+</body>

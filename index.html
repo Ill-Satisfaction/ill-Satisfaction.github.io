@@ -1,120 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <title>akiah - home</title>
+    <meta name="description" content="homepage for akiah tullis">
+    <meta name="author" content="akiah tullis">
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>akiah - home</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/barebones.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="icon" type="image/png" href="images/favicon-16.png">-->
-
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!--<link rel="icon" type="image/png" href="images/favicon-16.png">-->
 </head>
-<body style="text-align:center;">
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- <div class="grid-container halves">
-      <div>
-        <a href="index.html" style="color:black; text-decoration:none;"><h4>akiah tullis</h4></a>
-      </div>
-      <div class="grid-container thirds" style="text-align:right;">
-        <a href="index.html"><div>stuff I've done</div></a>
-        <a href="resume.html"><div>resume</div></a>
-        <a href="about.html"><div>about</div></a>
-      </div>
-    </div>
-  </div>
-
-  </br></br></br>
+<body>
 
 
-  <h5>
-    <ul>
-        <li>Team lead for multiple projects</li>
-        <li>Multidisciplinary problem solver</li>
-        <li>Experienced in AR/VR dev</li>
-    </ul>
-    </h5>
 
 
-    </br></br>
 
-    <h4>Projects</h4>
-    <a href="nasa_suits.html">
-    <div class="grid-container halves">
-        <div>
-            <h4>NASA SUITS</h4>
-            <p style="color:black; text-decoration:none;">Long-term Augmented Reality project built in Unity with the MRTK</p>
+    <!-- header -->
+    <div id="header">
+        <div id="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/atullis/">
+                <img src="img/about/socials/linkedin.PNG" class="social-icon" />
+            </a>
+            <a target="_blank" href="https://github.com/Ill-Satisfaction">
+                <img src="img/about/socials/github.PNG" class="social-icon" />
+            </a>
         </div>
-        <img src="images/arsis_overview.jpg" class="u-full-width"></img>
+        <a href="index.html">
+            <h1 id="namecard">akiah tullis</h1>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" id="current">
+                        projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="html/blog.html">
+                        writeups
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="html/about.html">
+                        about + contact
+                    </a>
+                </li>
+                <li>
+                    <a href="files/atullis-resume.PDF" download>
+                        resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <br />
     </div>
-    </a>
 
-    
 
-    <div class="grid-container thirds">
-        <a href="dino_wars.html">
-            <div>
-                <h6>Dino Wars</h6>
-                <img src="images/dino_wars.PNG" class="u-max-full-width"></img>
+
+
+    <!-- portfolio -->
+    <div class="section">
+        <h2 class="black">
+            Game <strong class="dark">Design</strong> + <strong class="dark">Development</strong>
+        </h2>
+    </div>
+
+
+
+    <div class="section">
+        <div class="case-study-gallery">
+            <a href="html/portfo-pages/nasa-suits.html">
+                <div class="case-study nasa-suits">
+                    <div class="case-study__overlay">
+                        <h2 class="case-study__title light">ARSIS 5.0</h2>
+                        <div class="case-study__link light">
+                            <p class="dark"><strong>Design, XR Dev, Team Lead</strong></p>
+                            <p>Summer 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="html/portfo-pages/puppet-knight.html">
+                <div class="case-study puppet-knight">
+                    <div class="case-study__overlay">
+                        <h2 class="case-study__title light">Puppet Knight</h2>
+                        <div class="case-study__link light">
+                            <p class="dark"><strong>Solo Project</strong></p>
+                            <p>Spring 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="html/portfo-pages/dino-wars.html">
+                <div class="case-study dino-wars">
+                    <div class="case-study__overlay">
+                        <h2 class="case-study__title light">Dino Wars</h2>
+                        <div class="case-study__link light">
+                            <p class="dark"><strong>Mechanics Design, Lead Dev</strong></p>
+                            <p>Winter 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <div class="section squish" id="footer">
+                <hr />
+                <h6>©2022 Akiah Tullis</h6>
             </div>
-        </a>
-        <a href="varscent.html">
-            <div>
-                <h6>VARScent</h6>
-                <img src="images/varscent.PNG" class="u-max-full-width"></img>
-            </div>
-        </a>
-        <a href="puppet_knight.html">
-            <div>
-                <h6>Puppet Knight</h6>
-                <img src="images/puppet_knight.PNG" class="u-max-full-width"></img>
-            </div>
-        </a>
-  </div>
-
-  </br></br></br></br>
-
-  <h5>Misc. Work</h5>
-  <div class="grid-container fifths">
-    <a href="coming_soon.html"><div>
-        <h6>Business Certification</h6>
-    </div></a>
-    <a href="coming_soon.html"><div>
-        <h6>Android Development</h6>
-    </div></a>
-    <a href="coming_soon.html"><div>
-        <h6>UI + UX Design</h6>
-    </div></a>
-    <a href="coming_soon.html"><div>
-        <h6>Concept Art</h6>
-    </div></a>
-    <a href="coming_soon.html"><div>
-        <h6>3D modeling</h6>
-    </div></a>
-  </div>
 
 
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-</html>

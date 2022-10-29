@@ -1,0 +1,10 @@
+#mugshot {
+    margin:auto;
+
+    background-image: url("../img/about/mugshot.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 11.5rem;
+    height: 16rem;
+}

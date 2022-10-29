@@ -1,0 +1,145 @@
+/*
+    lightbox gallery code from
+    https://codepen.io/vincebrown/
+    with minor modifications
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://subtlepatterns.com/patterns/sativa.png");
+}
+
+p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #444;
+    font-weight: 100;
+    width: 90%;
+}
+
+@media screen and (min-width: 37.5em) {
+    p {
+        height: 70%;
+    }
+}
+
+.case-study-gallery {
+    margin-top: 50px;
+    width: 90%;
+    margin: 50px auto;
+    max-width: 1100px;
+}
+
+.case-study {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 250px;
+    margin: 0 auto 2rem;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+@media screen and (min-width: 25.5em) {
+    .case-study {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .case-study {
+        display: inline-block;
+        width: 30%;
+        margin-left: 25px;
+    }
+}
+
+.case-study__img {
+    width: 90%;
+    display: block;
+    margin-top: 50%;
+    transform: translateY(50%);
+    margin: 0 auto;
+}
+
+.case-study__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+    .case-study__overlay:after {
+        content: "";
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        background-color: #1A1A1A;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        z-index: -10;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+
+.case-study__title {
+    position: relative;
+    top: -200px;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.case-study__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 200px;
+    padding: 10px;
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 1.25em;
+    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.case-study:hover .case-study__title {
+    top: 0;
+}
+
+.case-study:hover .case-study__link {
+    top: 0;
+}
+
+.case-study:hover .case-study__overlay:after {
+    opacity: 0.75;
+}
+
+.puppet-knight {
+    background-image: url("../img/puppet-knight/splash.PNG");
+}
+
+.nasa-suits {
+    background-image: url("../img/nasa-suits/splash.JPG");
+}
+
+.dino-wars {
+    background-image: url("../img/dino-wars/splash.PNG");
+}
