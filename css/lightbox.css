@@ -41,8 +41,8 @@ p {
     height: 250px;
     margin: 0 auto 2rem;
     background-size: cover;
-    border-radius: 10px;
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     transition: all 0.4s ease;
     background-repeat:no-repeat;
