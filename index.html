@@ -1,119 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>akiah - home</title>
-    <meta name="description" content="homepage for akiah tullis">
-    <meta name="author" content="akiah tullis">
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <!--<link rel="icon" type="image/png" href="images/favicon-16.png">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
 </head>
 <body>
-
-
-
-
-
-    <!-- header -->
-    <div id="header">
-        <div id="social-icons">
-            <a target="_blank" href="https://www.linkedin.com/in/atullis/">
-                <img src="img/about/socials/linkedin.png" class="social-icon" />
-            </a>
-            <a target="_blank" href="https://github.com/Ill-Satisfaction">
-                <img src="img/about/socials/github.png" class="social-icon" />
-            </a>
-        </div>
-        <a href="index.html">
-            <h1 id="namecard">akiah tullis</h1>
-        </a>
+    <header>
+        <h1>akiah tullis</h1>
         <nav>
             <ul>
-                <li>
-                    <a href="index.html" id="current">
-                        projects
-                    </a>
-                </li>
-
-                <li>
-                    <a href="html/blog.html">
-                        writeups
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="html/about.html">
-                        about + contact
-                    </a>
-                </li>
-                <li>
-                    <a href="files/atullis-resume.pdf" download>
-                        resume
-                    </a>
-                </li>
+                <li><a href="#" class="active">{ portfolio }</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
         </nav>
-        <br />
-    </div>
+    </header>
 
-
-
-
-    <!-- portfolio -->
-    <div class="section">
-        <h2 class="black">
-            Game <strong class="dark">Design</strong> + <strong class="dark">Development</strong>
-        </h2>
-    </div>
-
-
-
-    <div class="section">
-        <div class="case-study-gallery">
-            <a href="html/portfo-pages/nasa-suits.html">
-                <div class="case-study nasa-suits">
-                    <div class="case-study__overlay">
-                        <h2 class="case-study__title light">ARSIS 5.0</h2>
-                        <div class="case-study__link light">
-                            <p class="dark"><strong>Design, XR Dev, Team Lead</strong></p>
-                            <p>Summer 2022</p>
-                        </div>
-                    </div>
+    <main>
+        <div class="grid-wrapper">
+            <a href="#" class="big">
+                <div class="portfo_text">
+                    <h1>Shrapnel</h1>
+                    <p>Senior Test Engineer</p>
                 </div>
+                <video autoplay muted loop playsinline>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </a>
 
-            <a href="html/portfo-pages/puppet-knight.html">
-                <div class="case-study puppet-knight">
-                    <div class="case-study__overlay">
-                        <h2 class="case-study__title light">Puppet Knight</h2>
-                        <div class="case-study__link light">
-                            <p class="dark"><strong>Solo Project</strong></p>
-                            <p>Spring 2022</p>
-                        </div>
-                    </div>
+            <a class="tall">
+                <div class="portfo_text">
+                    <h1>NASA SUITS</h1>
+                    <p>Team Lead + C# Programmer</p>
                 </div>
+                <video autoplay muted loop playsinline>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </a>
 
-            <a href="html/portfo-pages/dino-wars.html">
-                <div class="case-study dino-wars">
-                    <div class="case-study__overlay">
-                        <h2 class="case-study__title light">Dino Wars</h2>
-                        <div class="case-study__link light">
-                            <p class="dark"><strong>Mechanics Design, Lead Dev</strong></p>
-                            <p>Winter 2021</p>
-                        </div>
-                    </div>
+            <a>
+                <div class="portfo_text">
+                    <h1>Dino Wars</h1>
+                    <p>Lead C# Programmer</p>
                 </div>
+                <video autoplay muted loop playsinline>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </a>
 
+            <a class="tall">
+                <div class="portfo_text">
+                    <h1>Puppet Knight</h1>
+                    <p>Solo VR Project</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1587588354456-ae376af71a25?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" />
+            </a>
 
-            <div class="section squish" id="footer">
-                <hr />
-                <h6>©2022 Akiah Tullis</h6>
-            </div>
+            <a>
+                <div class="portfo_text">
+                    <h1>SixGuns</h1>
+                    <p>Solo C# Project</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1558980663-3685c1d673c4?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=60" alt="" />
+            </a>
 
+            <a>
+                <div class="portfo_text">
+                    <h1>Android App Development</h1>
+                    <p>Codepath Course</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1588499756884-d72584d84df5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2134&amp;q=80" alt="" />
+            </a>
 
+            <a>
+                <div class="portfo_text">
+                    <h1>Misc.</h1>
+                    <p>Explorations in C#</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80" alt="" />
+            </a>
+        </div>
+
+        <h3>· · ·</h3>
+
+        <div class="icon-container">
+            <a href="https://linkedin.com/in/yourprofile" class="icon" target="_blank">
+                <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="https://github.com/yourprofile" class="icon" target="_blank">
+                <i class="ri-github-fill"></i>
+            </a>
+            <a href="mailto:your.email@example.com" class="icon">
+                <i class="ri-mail-fill"></i>
+            </a>
+        </div>
+    </main>
 </body>
+</html>
+
