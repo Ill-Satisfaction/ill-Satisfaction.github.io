@@ -1,5 +1,6 @@
 html { 
   scroll-behavior: smooth; 
+  min-height: 100vh;
 }
 
 :root {
@@ -12,7 +13,7 @@ html {
     --white: rgba(250, 250, 250, 0.85);
 
     /*Style Elements*/
-    --padding-large: .5rem;
+    --padding-large: 1rem;
     --standard-border: 5px;
 }
 
@@ -131,7 +132,7 @@ img {
         height: 100%;
         object-fit: cover;
         border-radius: var(--standard-border);
-        filter: sepia(.1) saturate(.55) brightness(0.40) contrast(.25) blur(1px);;
+        filter: sepia(.1) saturate(.55) brightness(0.40) contrast(.25) blur(0px);;
     }
 
     /*make sure that the hero image or video stays clear on load-in*/
@@ -249,11 +250,11 @@ img {
   overflow: hidden;
 
   position: absolute;
-  top: 5rem;
+  top: 8rem;
   left:-100px;
   right:-100px;
   padding: var(--padding-large);
-  width: calc( 99vw - 4em );
+  width: max( calc( 99vw - 30em ) );
   margin: auto;
   z-index: 1000;
   background-color: rgba(250, 250, 250, 0.90);
@@ -261,6 +262,12 @@ img {
   color: var(--charcoal);
   display: flex;
   border-radius: var(--standard-border);
+}
+
+@media (max-width: 1000px) {
+  .overlay-content-wrapper {
+    width: max( calc( 99vw - 4em ) );
+  }
 }
 
 .overlay-content-wrapper > a {
@@ -286,7 +293,8 @@ img {
 }
 
 
-.overlay-wrapper:target ~ main {
+.overlay-wrapper:target ~ main,
+.overlay-wrapper:has(.overlay-wrapper-anchor-open-quote:target)  ~ main{
   visibility: hidden;
 }
 
@@ -314,10 +322,13 @@ img {
 .overlay-content .image-wrapper {
   margin: 1rem auto 0;
   text-align: center;
-  justify-content: center;
+
   max-height: 250px;
   overflow: hidden;
   border-radius: var(--standard-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay-content .image-wrapper .hero {
