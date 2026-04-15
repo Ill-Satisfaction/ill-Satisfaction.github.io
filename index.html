@@ -4,97 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Akiah Tullis — Code, QA</title>
+    <meta name="description" content="Portfolio of Akiah Tullis — Senior Test Engineer, Game Developer, and XR Researcher.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Josefin+Slab:wght@600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
 </head>
 
-</br>
-
 <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <h1 id="byline">Akiah ( Code, QA ) ;</h1>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
-                <li><a href="#byline" class="active">{ projects }</a></li>
+                <li><a href="#byline" class="active" aria-current="page">{ projects }</a></li>
                 <li><a href="about.html">about</a></li>
             </ul>
         </nav>
     </header>
 
-    </br>
-
-
+    <!-- ========================== -->
+    <!-- OVERLAY: SHRAPNEL          -->
+    <!-- ========================== -->
     <div id="shrapnel-overlay" class="overlay-wrapper">
-        <div id="shrapnel-overlay-anchor-open-quote" class="overlay-wrapper-anchor-open-quote">
-            <a href="#byline" class="overlay-background"></a>
-            <div class="overlay-content-wrapper">
-                <div class="overlay-content">
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Shrapnel project details">
+            <div class="overlay-content">
 
-                    <h2>Shrapnel</h2>
-                    <h3>Senior Test Engineer</h3>
+                <h2>Shrapnel</h2>
+                <h3>Senior Test Engineer</h3>
 
-                    <div class="tags negative">
-                        <span>Unreal</span>
-                        <span>Jira</span>
-                        <span>Jenkins</span>
-                        <span>Python</span>
-                        <span>AccelByte</span>
-                        <span>Python</span>
-                        <span>Amazon Web Services </span>
-                        <span>Perforce</span>
-                        <span>Technical Writing</span>
-                        <span>Remote Team Comms + Leadership</span>
-                    </div>
-                    <div class="image-wrapper">
-                        <img class="hero" src="img/shrapnel/shrapnel-hero-image3.png" />
-                    </div>
-                    <h3>Working QA with Lionbridge</h3>
+                <div class="tags negative" aria-label="Technologies used">
+                    <span>Unreal</span>
+                    <span>Jira</span>
+                    <span>Jenkins</span>
+                    <span>Python</span>
+                    <span>AccelByte</span>
+                    <span>Amazon Web Services</span>
+                    <span>Perforce</span>
+                    <span>Technical Writing</span>
+                    <span>Remote Team Comms + Leadership</span>
+                </div>
 
-                    <blockquote class="otro-blockquote">
-                        <span class="truncate">
-                            What can I say about Akiah? Singularly impressive doesn’t even begin to cover it.
+                <div class="image-wrapper">
+                    <img class="hero" src="img/shrapnel/shrapnel-hero-image3.png"
+                        alt="Shrapnel gameplay showing urban combat environment" />
+                </div>
 
-                            Akiah started as a tester on my team, but it didn’t take long for them to prove that...
-                            <a href="#shrapnel-overlay-anchor-open-quote" class="showmore">show more</a>
-                        </span>
-                        <span class="fullquote">
-                            <p>What can I say about Akiah? Singularly impressive doesn’t even begin to cover it. Akiah
-                                started as a tester on my team, but it didn’t take long for them to prove that their
-                                skills and leadership extended far beyond that role.
-                            </p>
-                            <p>Their ability to analyze systems, collaborate cross-discipline, and drive meaningful
-                                improvements quickly led to a well-earned promotion as an embedded Senior Tester in the
-                                studio. Once embedded, Akiah didn't just meet expectations, they redefined them. They
-                                took on additional responsibilities, demonstrated solid coding skills, and created a QA
-                                tool that became invaluable to Game Design. This tool leveraged backend playtest data to
-                                generate an overlay onto the current game level visualizing every player death: where it
-                                occurred, where the fatal shot originated, and the method of death. By providing clear
-                                insights into engagement zones, chokepoints, and level flow, Akiah’s work gave designers
-                                insightful data to help them refine maps and optimize gameplay. </p>
-                            <p>Beyond technical expertise, Akiah has the ability to bridge gaps between teams, QA,
-                                Engineering, UI, and Game Design; ensuring that testing isn't just about finding bugs
-                                but about elevating the entire game. Any team would be lucky to have them.
-                            </p>
-                            <a href="#shrapnel-overlay" class="showless">show less</a>
-                        </span>
+                <h3>Working QA with Lionbridge</h3>
 
+                <!-- Quote anchor target: sits right above the quote so browser scrolls here -->
+                <span id="shrapnel-quote-open" class="quote-anchor"></span>
 
-                        <h5><a href="https://www.linkedin.com/in/timothy-manley-89408b11/" target="_blank">Tim Manley,
-                                Shrapnel Head of
-                                QA<i class="ri-external-link-fill"></i></a></h5>
-                    </blockquote>
+                <blockquote class="testimonial" data-quote="shrapnel">
+                    <span class="truncate">
+                        What can I say about Akiah? Singularly impressive doesn't even begin to cover it.
+                        Akiah started as a tester on my team, but it didn't take long for them to prove that...
+                        <a href="#shrapnel-quote-open" class="showmore">show more</a>
+                    </span>
+                    <span class="fullquote">
+                        <p>What can I say about Akiah? Singularly impressive doesn't even begin to cover it. Akiah
+                            started as a tester on my team, but it didn't take long for them to prove that their
+                            skills and leadership extended far beyond that role.</p>
+                        <p>Their ability to analyze systems, collaborate cross-discipline, and drive meaningful
+                            improvements quickly led to a well-earned promotion as an embedded Senior Tester in the
+                            studio. Once embedded, Akiah didn't just meet expectations, they redefined them. They
+                            took on additional responsibilities, demonstrated solid coding skills, and created a QA
+                            tool that became invaluable to Game Design. This tool leveraged backend playtest data to
+                            generate an overlay onto the current game level visualizing every player death: where it
+                            occurred, where the fatal shot originated, and the method of death. By providing clear
+                            insights into engagement zones, chokepoints, and level flow, Akiah's work gave designers
+                            insightful data to help them refine maps and optimize gameplay.</p>
+                        <p>Beyond technical expertise, Akiah has the ability to bridge gaps between teams, QA,
+                            Engineering, UI, and Game Design; ensuring that testing isn't just about finding bugs
+                            but about elevating the entire game. Any team would be lucky to have them.</p>
+                        <a href="#shrapnel-overlay" class="showless">show less</a>
+                    </span>
+                    <footer>
+                        <a href="https://www.linkedin.com/in/timothy-manley-89408b11/" target="_blank"
+                            rel="noopener noreferrer">Tim Manley, Shrapnel Head of QA
+                            <i class="ri-external-link-fill" aria-hidden="true"></i></a>
+                    </footer>
+                </blockquote>
+
                     <p>In 2023, I had just finished my part of coding for a stealth B2B app startup and decided that,
                         with Covid-19 no longer the dominant concern, it was time for me to get a real job. I had been
                         an advocate for games since I was a little kid, and got a degree in Game Development not long
                         earlier, so I decided that it was a good time to try for it. Unfortunately, Games is something
-                        of a insider industry-- so I figured my best shot was to get a basic Games Tester position and
-                        work my way up.
-                    </p>
+                        of a insider industry—so I figured my best shot was to get a basic Games Tester position and
+                        work my way up.</p>
                     <p>So, that's what I did.</p>
                     <p>Fast forward a year, and an opportunity opened up for a tester to be embedded in an STE role at
                         NeonMachine: the creators of the high-profile crypto game Shrapnel. I had worked hard the year
@@ -103,124 +108,158 @@
                         projects whenever they were available (or whenever I noticed that it would be helpful to start
                         one). I was given the chance to move to Seattle and take on the role. After a lot of anxiety and
                         considerations, I flew across state lines with just a backpack and a dream.</p>
-                    <p>While working as an STE, my focus continued to be on team support roles, including writing lots
-                        of tests and documentation, mentoring, and speaking directly to the designers and developers to
-                        determine the current state and requirements of the game. Additionally, I took over a lot of the
-                        CI/CD requirements of my team, including launching servers, tracking server-side logs and
-                        crashes, verifying VCS commits, and staying on top of the State-of-the-Project from a QA
-                        perspective.
-                        I was also given some opportunities to get back into coding, and built a visualizer tool for the
-                        designers. I of course scrubbed out all the company-specific info, but I was given permission to
-                        show the anonymized version of the app below ☺️</p>
-                    <div class="img-caption-wrapper">
-                        <img class="img-regular" src="img/shrapnel/shrapnel-visualizer-tool.png"
-                            alt="visualizer tool with random map background and data" />
-                        <h5 class="image-caption">NDA-Compliant Visualizer Tool</h5>
-                    </div>
+
+                    <!-- === SUB-PROJECT: QA & CI/CD === -->
+                    <section class="sub-project" aria-labelledby="shrapnel-qa">
+                        <h4 id="shrapnel-qa">QA Leadership &amp; CI/CD</h4>
+                        <p>While working as an STE, my focus continued to be on team support roles, including writing lots
+                            of tests and documentation, mentoring, and speaking directly to the designers and developers to
+                            determine the current state and requirements of the game. Additionally, I took over a lot of the
+                            CI/CD requirements of my team, including launching servers, tracking server-side logs and
+                            crashes, verifying VCS commits, and staying on top of the State-of-the-Project from a QA
+                            perspective.</p>
+                        <div class="sub-project-tags">
+                            <span>Jenkins</span>
+                            <span>Perforce</span>
+                            <span>Server Management</span>
+                            <span>Documentation</span>
+                        </div>
+                    </section>
+
+                    <!-- === SUB-PROJECT: VISUALIZER TOOL === -->
+                    <section class="sub-project" aria-labelledby="shrapnel-viz">
+                        <h4 id="shrapnel-viz">Death Heatmap Visualizer Tool</h4>
+                        <p>I was also given some opportunities to get back into coding, and built a visualizer tool for the
+                            designers. I of course scrubbed out all the company-specific info, but I was given permission to
+                            show the anonymized version of the app below &#x263A;&#xFE0F;</p>
+                        <figure class="img-caption-wrapper">
+                            <img class="img-regular" src="img/shrapnel/shrapnel-visualizer-tool.png"
+                                alt="Visualizer tool showing a map overlay with player death data points, shot origins, and engagement zones" />
+                            <figcaption>NDA-Compliant Visualizer Tool</figcaption>
+                        </figure>
+                        <div class="sub-project-tags">
+                            <span>Python</span>
+                            <span>Data Visualization</span>
+                            <span>Game Design Support</span>
+                        </div>
+                    </section>
+
+                    <!-- === SUB-PROJECT: PLACEHOLDER FOR MORE === -->
+                    <section class="sub-project" aria-labelledby="shrapnel-more">
+                        <h4 id="shrapnel-more">More Sub-Projects</h4>
+                        <p class="placeholder-note"><em>Additional sub-projects coming soon — check back for details on
+                                automation work, test frameworks, and more.</em></p>
+                    </section>
 
                     <p>Unfortunately, Games is also a turbulent industry. After supporting three live releases of the
-                        Shrapnel Game, enjoyed by many live players (specific numbers would likely breach my NDA 😉), I,
+                        Shrapnel Game, enjoyed by many live players (specific numbers would likely breach my NDA &#x1F609;), I,
                         and the rest of my team, were reassigned or let go. I was given the choice to move back to
                         Idaho, but decided that I liked Seattle too much to do that.</p>
 
                     <p>Overall, I'm proud of the work that I did, happy with the people I met, and glad for the
-                        experience 😁
-                    </p>
+                        experience &#x1F601;</p>
 
-                    <div class="img-caption-wrapper">
-                        <img class="img-regular" src="img/shrapnel/shrapnel-hero-image2.png" />
-                        <h5 class="image-caption">Shrapnel's upcoming Multiplayer Mode</h5>
-                    </div>
+                    <figure class="img-caption-wrapper">
+                        <img class="img-regular" src="img/shrapnel/shrapnel-hero-image2.png"
+                            alt="Shrapnel multiplayer mode screenshot" />
+                        <figcaption>Shrapnel's upcoming Multiplayer Mode</figcaption>
+                    </figure>
+
                     <h5>More About Shrapnel</h5>
                     <p>Watch on Youtube: <a class="text-link" href="https://youtu.be/KNTVpHT-Xgk?si=kiNkU6AyIDlWUVv7"
-                            target="_blank">https://youtu.be/KNTVpHT-Xgk?si=kiNkU6AyIDlWUVv7<i
-                                class="ri-external-link-fill"></i></a></p>
+                            target="_blank" rel="noopener noreferrer">https://youtu.be/KNTVpHT-Xgk
+                            <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
                     <p>Shrapnel Website: <a class="text-link" href="https://www.shrapnel.com/"
-                            target="_blank">https://www.shrapnel.com<i class="ri-external-link-fill"></i></a></p>
+                            target="_blank" rel="noopener noreferrer">https://www.shrapnel.com
+                            <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
 
-
-                    </br>
-                    <a href="#shrapnel-overlay" class="overlay-close"> To Top<i class="ri-arrow-up-double-line"></i></a>
                     <div class="image-wrapper">
-                        <img class="hero" src="img/shrapnel/shrapnel-hero-image.png" />
+                        <img class="hero" src="img/shrapnel/shrapnel-hero-image.png"
+                            alt="Shrapnel key art" />
                     </div>
 
-
-
-                    <a href="#byline" class="overlay-close"><i class="ri-close-large-line"></i></a>
                 </div>
             </div>
         </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
     </div>
 
+    <!-- ========================== -->
+    <!-- OVERLAY: NASA SUITS        -->
+    <!-- ========================== -->
     <div id="suits-overlay" class="overlay-wrapper">
-        <div id="suits-overlay-anchor-open-quote" class="overlay-wrapper-anchor-open-quote">
-            <a href="#byline" class="overlay-background"></a>
-            <div class="overlay-content-wrapper">
-                <div class="overlay-content">
-                    <h2>NASA SUITS Research Team</h2>
-                    <h3>Team Lead, VR Programmer</h3>
+        <a href="#byline" class="overlay-background" aria-label="Close NASA SUITS details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="NASA SUITS project details">
+            <div class="overlay-content">
+                <h2>NASA SUITS Research Team</h2>
+                <h3>Team Lead, VR Programmer</h3>
 
-                    <div class="tags negative">
-                        <span>Unity</span>
-                        <span>C#</span>
-                        <span>AR</span>
-                        <span>VR</span>
-                        <span>Project Management</span>
-                        <span>Agile Workflow / Kanban</span>
-                        <span>UI</span>
-                        <span>Unity Multiplayer</span>
-                        <span>Mixed Reality Toolkit</span>
-                        <span>GitHub</span>
-                        <span>PlasticSCM </span>
+                <div class="tags negative" aria-label="Technologies used">
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>AR</span>
+                    <span>VR</span>
+                    <span>Project Management</span>
+                    <span>Agile Workflow / Kanban</span>
+                    <span>UI</span>
+                    <span>Unity Multiplayer</span>
+                    <span>Mixed Reality Toolkit</span>
+                    <span>GitHub</span>
+                    <span>PlasticSCM</span>
+                    <span>Technical Writing</span>
+                    <span>Presentations</span>
+                </div>
 
-                        <span>Technical Writing</span>
-                        <span>Presentations</span>
-                    </div>
-                    <div class="image-wrapper">
-                        <img class="hero" src="img/nasa-suits/hero.jpg" />
-                    </div>
-                    <h3>XR Research with NASA</h3>
-                    <blockquote class="otro-blockquote">
-                        <span class="truncate">
-                            Akiah is an incredible programmer, designer and developer. I had the opportunity to work
-                            with them for multiple years during their time as a student at Boise State...
-                            <a href="#suits-overlay-anchor-open-quote" class="showmore">show more</a>
-                        </span>
-                        <span class="fullquote">
-                            <p>Akiah is an incredible programmer, designer and developer. I had the opportunity to
-                                work with them for multiple years during their time as a student at Boise State
-                                University. Akiah has strong leadership skills and did a wonderful job working as a
-                                team lead for the Boise State University NASA SUITS team. The NASA SUITS challenge
-                                asks students from multiple universities to build an extended reality application to
-                                aid in research toward future spacesuit technologies used on the international space
-                                station, moon and Mars. Akiah managed a large team of students and tested the team's
-                                application in Houston in Spring 2022. Akiah is a strong learner, a team player and
-                                an all around wonderful person to work with. Any company would be lucky to work with
-                                Akiah.</p>
-                            <a href="#suits-overlay" class="showless">show less</a>
-                        </span>
+                <div class="image-wrapper">
+                    <img class="hero" src="img/nasa-suits/hero.jpg"
+                        alt="NASA SUITS team working with VR equipment" />
+                </div>
 
+                <h3>XR Research with NASA</h3>
 
+                <span id="suits-quote-open" class="quote-anchor"></span>
 
-
-                        <h5><a href="https://www.linkedin.com/in/karen-schwartztrauber-doty-8b709468/"
-                                target="_blank">Dr. Karen
-                                Doty, SUITS Team Coordinator<i class="ri-external-link-fill"></i></a></h5>
-                    </blockquote>
-
+                <blockquote class="testimonial" data-quote="suits">
+                    <span class="truncate">
+                        Akiah is an incredible programmer, designer and developer. I had the opportunity to work
+                        with them for multiple years during their time as a student at Boise State...
+                        <a href="#suits-quote-open" class="showmore">show more</a>
+                    </span>
+                    <span class="fullquote">
+                        <p>Akiah is an incredible programmer, designer and developer. I had the opportunity to
+                            work with them for multiple years during their time as a student at Boise State
+                            University. Akiah has strong leadership skills and did a wonderful job working as a
+                            team lead for the Boise State University NASA SUITS team. The NASA SUITS challenge
+                            asks students from multiple universities to build an extended reality application to
+                            aid in research toward future spacesuit technologies used on the international space
+                            station, moon and Mars. Akiah managed a large team of students and tested the team's
+                            application in Houston in Spring 2022. Akiah is a strong learner, a team player and
+                            an all around wonderful person to work with. Any company would be lucky to work with
+                            Akiah.</p>
+                        <a href="#suits-overlay" class="showless">show less</a>
+                    </span>
+                    <footer>
+                        <a href="https://www.linkedin.com/in/karen-schwartztrauber-doty-8b709468/"
+                            target="_blank" rel="noopener noreferrer">Dr. Karen Doty, SUITS Team Coordinator
+                            <i class="ri-external-link-fill" aria-hidden="true"></i></a>
+                    </footer>
+                </blockquote>
 
                     <p>A number of years ago, in 2019, I was invited to join an on-campus research group exploring XR UI
                         features with NASA. At the time I was working on a degree in Games Development. Ironically,
                         between SUITs and VARScent, I spent more time in that degree doing useful research than making
                         games. Still, though, NASA Sounded awesome and VR was the hot new thing, so I dove into it</p>
 
-
-                    <div class="img-caption-wrapper">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/X4m33WfXC3w?si=NQrBMar3qwckt_Ee" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                        <h5 class="image-caption">ARSIS Overview</h5>
-                    </div>
+                    <figure class="img-caption-wrapper">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/X4m33WfXC3w?si=NQrBMar3qwckt_Ee"
+                            title="ARSIS Overview video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                            loading="lazy"></iframe>
+                        <figcaption>ARSIS Overview</figcaption>
+                    </figure>
 
                     <p>In my first year on the project, I built navigation tools in C#. A lot of videogame features were
                         untested in VR, so we went about testing them. My personal feature was the 'Beacons' feature and
@@ -229,14 +268,15 @@
                         with a heading and a distance. You can see both features in this video that we took during some
                         outreach at my university:</p>
 
-                    <div class="img-caption-wrapper">
+                    <figure class="img-caption-wrapper">
                         <iframe width="560" height="315"
                             src="https://www.youtube.com/embed/r6jfHz-TqG4?si=khsagURgRWxa9bgy"
-                            title="YouTube video player" frameborder="0"
+                            title="ARSIS Features as of Spring 2022" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h5 class="image-caption">ARSIS Features as of Spring 2022</h5>
-                    </div>
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                            loading="lazy"></iframe>
+                        <figcaption>ARSIS Features as of Spring 2022</figcaption>
+                    </figure>
 
                     <p>After my first year on the project, I was asked to take over as Team Lead. This was a very
                         educational position for me, because it gave me my first real chance to practice the Project
@@ -246,159 +286,153 @@
                         page technical research proposal, which was accepted by NASA and the Idaho Space Grant
                         Consortium and allowed the team to perform the work (below).</p>
 
-                    <div class="img-caption-wrapper">
-                        <h5>
-                            <a href="files/ARSIS 5.0 Proposal Technical Section.pdf" download>
-                                <i class="ri-file-download-line"></i> SUITS PROPOSAL
-                            </a>
-                        </h5>
-                    </div>
+                    <figure class="img-caption-wrapper">
+                        <a href="files/ARSIS%205.0%20Proposal%20Technical%20Section.pdf" download class="file-download">
+                            <i class="ri-file-download-line" aria-hidden="true"></i> SUITS PROPOSAL
+                        </a>
+                    </figure>
 
-                    <p>
-                        With COVID-19 in full swing, the main objective of the group was survival, and we succeeded on
+                    <p>With COVID-19 in full swing, the main objective of the group was survival, and we succeeded on
                         that objective. The SUITs Challenge team is still around today and operational. Our secondary
                         objectives of trying new things in XR, presenting them to NASA, and performing outreach and
                         academic papers, were also all successful to varying degrees. We discovered a lot more 'it
-                        doesn't works's than 'it works's, but, hey, that's research!
-                    </p>
+                        doesn't works's than 'it works's, but, hey, that's research!</p>
 
+                    <figure class="img-caption-wrapper">
+                        <img class="img-regular" src="img/nasa-suits/hero4.jpg"
+                            alt="Team preparing equipment for live testing at Johnson Space Center" />
+                        <figcaption>Preparation for Live Testing at JSC</figcaption>
+                    </figure>
 
-
-                    <div class="img-caption-wrapper">
-                        <img class="img-regular" src="img/nasa-suits/hero4.jpg" />
-                        <h5 class="image-caption">Preparation for Live Testing at JSC</h5>
-                    </div>
-
-                    <p>
-                        After my year as Team Lead, and a bonus semester to get some ducks in a row with my Major switch
+                    <p>After my year as Team Lead, and a bonus semester to get some ducks in a row with my Major switch
                         from Computer Science to Games, I graduated, and left the position for another Undergraduate
-                        Researcher to fill.
-                    </p>
-                    <p>
-                        Overall, I really enjoy my time with SUITs. It was a lot of work, and a lot
+                        Researcher to fill.</p>
+                    <p>Overall, I really enjoy my time with SUITs. It was a lot of work, and a lot
                         of learning. Everything XR was back then, because the field was so new, and we were all
                         undergrads. I remember the switch
                         from MRTK 2 to 3 throwing our team into disarray until we could adapt, and figuring out how to
-                        do checkins for GitHub (to avoid the large binary file problem) was its own adventure 😆
-                    </p>
+                        do checkins for GitHub (to avoid the large binary file problem) was its own adventure &#x1F606;</p>
 
-                    <div class="img-caption-wrapper">
-                        <h5>
-                            <a href="files/ARSIS 5.0 Proposal Technical Section.pdf" download>
-                                <i class="ri-file-download-line"></i> SUITS PROPOSAL
-                            </a>
-                        </h5>
-                    </div>
+                    <figure class="img-caption-wrapper">
+                        <img class="img-regular" src="img/nasa-suits/hero3.jpg"
+                            alt="Team receiving recognition at Johnson Space Center" />
+                        <figcaption>Recognition at Johnson Space Center</figcaption>
+                    </figure>
 
-                    <div class="img-caption-wrapper">
-                        <img class="img-regular" src="img/nasa-suits/hero3.jpg" />
-                        <h5 class="image-caption">Recognition at Johnson Space Center</h5>
-                    </div>
-
-                    <div class="img-caption-wrapper">
-                        <img class="img-regular" src="img/nasa-suits/unity-environment.jpg" />
-                        <h5 class="image-caption">Ground Control Portal</h5>
-                    </div>
-
-
-
-
+                    <figure class="img-caption-wrapper">
+                        <img class="img-regular" src="img/nasa-suits/unity-environment.jpg"
+                            alt="Ground control portal built in Unity" />
+                        <figcaption>Ground Control Portal</figcaption>
+                    </figure>
 
                     <h5>More About NASA SUITS</h5>
-                    <p>Watch on Youtube: <a class="text-link" href="https://youtu.be/X4m33WfXC3w?si=PogdcaTSssU2HAmc"
-                            target="_blank">https://youtu.be/X4m33WfXC3w?si=PogdcaTSssU2HAmc<i
-                                class="ri-external-link-fill"></i></a></p>
+                    <p>Watch on Youtube: <a class="text-link"
+                            href="https://youtu.be/X4m33WfXC3w?si=PogdcaTSssU2HAmc"
+                            target="_blank" rel="noopener noreferrer">https://youtu.be/X4m33WfXC3w
+                            <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
                     <p>SUITS Website: <a class="text-link"
                             href="https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/"
-                            target="_blank">https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students<i
-                                class="ri-external-link-fill"></i></a></p>
+                            target="_blank" rel="noopener noreferrer">nasa.gov/learning-resources/suits
+                            <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
 
-
-                    </br>
-                    <a href="#suits-overlay" class="overlay-close"> To Top<i class="ri-arrow-up-double-line"></i></a>
                     <div class="image-wrapper">
-                        <img class="hero" src="img/nasa-suits/features.png" />
+                        <img class="hero" src="img/nasa-suits/features.png"
+                            alt="ARSIS feature overview diagram" />
                     </div>
 
-                </div>
-
-                <a href="#byline" class="overlay-close"><i class="ri-close-large-line"></i></a>
             </div>
         </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
     </div>
 
+    <!-- ========================== -->
+    <!-- OVERLAY: DINO WARS         -->
+    <!-- ========================== -->
     <div id="dinowars-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-background"></a>
-        <div class="overlay-content-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close Dino Wars details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Dino Wars project details">
             <div class="overlay-content">
                 <h2>Dino Wars</h2>
                 <p>Details Coming Soon!...</p>
             </div>
-            <a href="#byline" class="overlay-close"><i class="ri-close-large-line"></i></a>
-
         </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
     </div>
 
+    <!-- ========================== -->
+    <!-- OVERLAY: PUPPET KNIGHT     -->
+    <!-- ========================== -->
     <div id="puppetknight-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-background"></a>
-        <div class="overlay-content-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close Puppet Knight details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Puppet Knight project details">
             <div class="overlay-content">
                 <h2>Puppet Knight</h2>
                 <p>Details about the project go here...</p>
             </div>
-            <a href="#byline" class="overlay-close"><i class="ri-close-large-line"></i></a>
-
         </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
     </div>
 
+    <!-- ========================== -->
+    <!-- OVERLAY: SIXGUNS           -->
+    <!-- ========================== -->
     <div id="sixguns-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-background"></a>
-        <div class="overlay-content-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close SixGuns details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="SixGuns project details">
             <div class="overlay-content">
                 <h2>SixGuns</h2>
                 <p>Details about the project go here...</p>
             </div>
-            <a href="#byline" class="overlay-close"><i class="ri-close-large-line"></i></a>
-
         </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
     </div>
 
+    <!-- ========================== -->
+    <!-- OVERLAY: MOBILE DEV        -->
+    <!-- ========================== -->
     <div id="mobiledev-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-background"></a>
-        <div class="overlay-content-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close Mobile Development details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Mobile Development project details">
             <div class="overlay-content">
                 <h2>Mobile Projects</h2>
                 <p>Details about the project go here...</p>
             </div>
-            <a href="#byline" class="overlay-close"><i class="ri-close-large-line"></i></a>
-
         </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
     </div>
 
+    <!-- ========================== -->
+    <!-- OVERLAY: MISC              -->
+    <!-- ========================== -->
     <div id="misc-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-background"></a>
-        <div class="overlay-content-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close Misc Projects details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Misc projects details">
             <div class="overlay-content">
                 <h2>Misc. Projects</h2>
                 <p>Details about the project go here...</p>
             </div>
-            <a href="#byline" class="overlay-close"><i class="ri-close-large-line"></i></a>
-
         </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
     </div>
 
 
-
-    <main>
+    <!-- ========================== -->
+    <!-- MAIN GRID                  -->
+    <!-- ========================== -->
+    <main id="main-content">
         <div class="grid-wrapper">
 
-
-
-            <a href="#shrapnel-overlay" class="big hero">
+            <!-- Shrapnel — big hero card -->
+            <a href="#shrapnel-overlay" class="card big hero" aria-label="View Shrapnel project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h1>Shrapnel</h1>
-
+                        <h2>Shrapnel</h2>
                     </div>
                     <div class="tags">
                         <span>Unreal</span>
@@ -408,20 +442,19 @@
                         <span>Perforce</span>
                     </div>
                 </div>
-                <video autoplay muted loop playsinline>
+                <!-- Static poster shown by default; video revealed on hover via CSS -->
+                <img class="card-poster" src="img/shrapnel/shrapnel-hero-image3.png"
+                    alt="Shrapnel gameplay" />
+                <video autoplay muted loop playsinline class="card-video" aria-hidden="true">
                     <source src="homepage_assets/shrapnel-hero.mov" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
             </a>
 
-
-
-
-            <a href="#suits-overlay" class="tall hero">
+            <!-- NASA SUITS — secondary hero: wide on narrow screens, tall on wide -->
+            <a href="#suits-overlay" class="card secondary-hero hero" aria-label="View NASA SUITS project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h1>NASA SUITS</h1>
-
+                        <h2>NASA SUITS</h2>
                     </div>
                     <div class="tags">
                         <span>Unity</span>
@@ -432,20 +465,18 @@
                         <span>Kanban / Agile</span>
                     </div>
                 </div>
-                <video autoplay muted loop playsinline>
+                <img class="card-poster" src="img/nasa-suits/hero.jpg"
+                    alt="NASA SUITS team" />
+                <video autoplay muted loop playsinline class="card-video" aria-hidden="true">
                     <source src="homepage_assets/suits-hero.mov" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
             </a>
 
-
-
-
-            <a href="#dinowars-overlay">
+            <!-- Dino Wars — tall -->
+            <a href="#dinowars-overlay" class="card" aria-label="View Dino Wars project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h1>Dino Wars</h1>
-
+                        <h2>Dino Wars</h2>
                     </div>
                     <div class="tags">
                         <span>Unity</span>
@@ -453,20 +484,15 @@
                         <span>Kanban</span>
                     </div>
                 </div>
-                <video autoplay muted loop playsinline>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <img class="card-poster" src="img/dino-wars/splash.PNG"
+                    alt="Dino Wars splash screen" />
             </a>
 
-
-
-
-            <a href="#puppetknight-overlay" class="tall">
+            <!-- Puppet Knight — tall -->
+            <a href="#puppetknight-overlay" class="card tall" aria-label="View Puppet Knight project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h1>Puppet Knight</h1>
-
+                        <h2>Puppet Knight</h2>
                     </div>
                     <div class="tags">
                         <span>Unity</span>
@@ -475,17 +501,15 @@
                         <span>Shaders</span>
                     </div>
                 </div>
-                <img src="homepage_assets/pknight-hero.gif" alt="" />
+                <img class="card-poster" src="homepage_assets/pknight-hero.gif"
+                    alt="Puppet Knight gameplay showing inverse kinematics" />
             </a>
 
-
-
-
-            <a href="#sixguns-overlay">
+            <!-- SixGuns -->
+            <a href="#sixguns-overlay" class="card" aria-label="View SixGuns project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h1>SixGuns</h1>
-
+                        <h2>SixGuns</h2>
                     </div>
                     <div class="tags">
                         <span>Unity</span>
@@ -493,20 +517,18 @@
                         <span>Dynamic UI</span>
                     </div>
                 </div>
-                <video autoplay muted loop playsinline>
+                <img class="card-poster" src="img/shrapnel/shrapnel-hero-image.png"
+                    alt="SixGuns project" />
+                <video autoplay muted loop playsinline class="card-video" aria-hidden="true">
                     <source src="homepage_assets/sixgun-hero.mov" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
             </a>
 
-
-
-
-            <a href="#mobiledev-overlay" class="">
+            <!-- Mobile Development -->
+            <a href="#mobiledev-overlay" class="card" aria-label="View Mobile Development project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h1>Mobile Development</h1>
-
+                        <h2>Mobile Development</h2>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -514,17 +536,15 @@
                         <span>Mobile Development</span>
                     </div>
                 </div>
-                <img src="homepage_assets/android-hero.gif" alt="" />
-
-
-
+                <img class="card-poster" src="homepage_assets/android-hero.gif"
+                    alt="Android app development projects" />
             </a>
 
-            <a href="#misc-overlay">
+            <!-- Explorations in C# -->
+            <a href="#misc-overlay" class="card" aria-label="View C# Explorations project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h1>Explorations in C#</h1>
-
+                        <h2>Explorations in C#</h2>
                     </div>
                     <div class="tags">
                         <span>C#</span>
@@ -532,49 +552,30 @@
                         <span>Debugging</span>
                     </div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80"
-                    alt="" />
+                <img class="card-poster"
+                    src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80"
+                    alt="Code on screen" />
             </a>
+
         </div>
 
+        <p class="divider" aria-hidden="true">· · ·</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <h3>· · ·</h3>
-
-        <div class="icon-container">
-            <a href="https://linkedin.com/in/yourprofile" class="icon" target="_blank">
-                <i class="ri-linkedin-fill"></i>
-            </a>
-            <a href="https://github.com/yourprofile" class="icon" target="_blank">
-                <i class="ri-github-fill"></i>
-            </a>
-            <a href="mailto:your.email@example.com" class="icon">
-                <i class="ri-mail-fill"></i>
-            </a>
-        </div>
+        <footer class="site-footer">
+            <div class="icon-container">
+                <a href="https://linkedin.com/in/atullis" class="icon" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <i class="ri-linkedin-fill" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Ill-Satisfaction" class="icon" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub profile">
+                    <i class="ri-github-fill" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:akiah-t@proton.me" class="icon" aria-label="Send email">
+                    <i class="ri-mail-fill" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
     </main>
 </body>
 

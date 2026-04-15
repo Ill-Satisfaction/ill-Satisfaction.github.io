@@ -1,101 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>About — Akiah Tullis</title>
+    <meta name="description" content="About Akiah Tullis — Senior Test Engineer, Game Developer, and XR Researcher.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
 </head>
+
 <body>
-</br>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <h1 id="byline">Akiah ( About ) ;</h1>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">projects</a></li>
-                <li><a href="about.html" class="active">{ about }</a></li>
+                <li><a href="about.html" class="active" aria-current="page">{ about }</a></li>
             </ul>
         </nav>
     </header>
-</br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    <main>
-        <div class="about-section" style="display: flex; flex-direction: row; align-items: flex-start; gap: 2rem; max-width: 900px; margin: 0 auto; padding: 2rem;">
-          
-          <!-- Face Image -->
-          <img src="img/mugshot.jpg" alt="Profile picture" style="border-radius: 100px; width: 200px; height: 200px; object-fit: cover; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);" />
-          
-          <!-- About Text -->
-          <div>
-            <p style="font-size: 1.1rem; line-height: 1.6; color: rgba(250, 250, 250, 0.85);">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, nunc sit amet congue lacinia, 
-              lacus sem ultricies purus, sed volutpat libero ante ut nulla. Integer quis mauris id risus convallis 
-              tincidunt a in sem.
-            </p>
-            <p style="font-size: 1.1rem; line-height: 1.6; color: rgba(250, 250, 250, 0.85); margin-top: 1rem;">
-              Curabitur a sapien sed enim tincidunt dapibus. Duis sodales fermentum velit, non dapibus purus tincidunt nec. 
-              Suspendisse quis magna a justo sollicitudin facilisis. Donec at porttitor ex.
-            </p>
-          </div>
-          
+    <main id="main-content">
+        <div class="about-section">
+            <img src="img/mugshot.jpg" alt="Akiah Tullis" class="about-photo" />
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, nunc sit amet congue
+                    lacinia, lacus sem ultricies purus, sed volutpat libero ante ut nulla. Integer quis mauris id risus
+                    convallis tincidunt a in sem.</p>
+                <p>Curabitur a sapien sed enim tincidunt dapibus. Duis sodales fermentum velit, non dapibus purus
+                    tincidunt nec. Suspendisse quis magna a justo sollicitudin facilisis. Donec at porttitor ex.</p>
+            </div>
         </div>
-      
 
+        <p class="divider" aria-hidden="true">· · ·</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <h3>· · ·</h3>
-
-        <div class="icon-container">
-            <a href="https://linkedin.com/in/yourprofile" class="icon" target="_blank">
-                <i class="ri-linkedin-fill"></i>
-            </a>
-            <a href="https://github.com/yourprofile" class="icon" target="_blank">
-                <i class="ri-github-fill"></i>
-            </a>
-            <a href="mailto:your.email@example.com" class="icon">
-                <i class="ri-mail-fill"></i>
-            </a>
-        </div>
+        <footer class="site-footer">
+            <div class="icon-container">
+                <a href="https://linkedin.com/in/atullis" class="icon" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <i class="ri-linkedin-fill" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Ill-Satisfaction" class="icon" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub profile">
+                    <i class="ri-github-fill" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:akiah-t@proton.me" class="icon" aria-label="Send email">
+                    <i class="ri-mail-fill" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
     </main>
 </body>
+
 </html>
