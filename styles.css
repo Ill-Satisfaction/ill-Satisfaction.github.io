@@ -462,6 +462,10 @@ main {
     opacity: 0.65;
 }
 
+.overlay-wrapper:target .overlay-close,
+.overlay-wrapper:has(.quote-anchor:target) .overlay-close {
+    display: flex;
+}
 
 
 
