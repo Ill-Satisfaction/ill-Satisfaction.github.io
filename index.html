@@ -30,44 +30,154 @@
     </header>
 
     <!-- ========================== -->
-    <!-- OVERLAY: SHRAPNEL          -->
+    <!-- OVERLAY: ENGAGEMENT TOOL   -->
     <!-- ========================== -->
-    <div id="shrapnel-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-close" aria-label="Close">
-            <i class="ri-close-large-line" aria-hidden="true"></i></a>
-        <div class="overlay-content-wrapper" role="dialog" aria-label="Shrapnel project details">
+    <div id="dui-overlay" class="overlay-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close Engagement Tracker details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Engagement Tracking Tool project details">
             <div class="overlay-content">
 
-                <h2>Shrapnel</h2>
-                <h3>Senior Test Engineer</h3>
+                <h2>Engagement Tracking Tool</h2>
+                <h3>SDET — NeonMachine (Contract)</h3>
 
                 <div class="tags negative" aria-label="Technologies used">
-                    <span>Unreal</span>
-                    <span>Jira</span>
-                    <span>Jenkins</span>
+                    <span>Unreal Engine</span>
+                    <span>UI / UX</span>
                     <span>Python</span>
-                    <span>AccelByte</span>
-                    <span>Amazon Web Services</span>
-                    <span>Perforce</span>
-                    <span>Technical Writing</span>
-                    <span>Remote Team Comms + Leadership</span>
+                    <span>Data Visualization</span>
+                    <span>Live Service QA</span>
                 </div>
 
+                <!-- TODO: Replace with DUI screenshot or video -->
                 <div class="image-wrapper">
                     <img class="hero" src="img/shrapnel/shrapnel-hero-image3.png"
-                        alt="Shrapnel gameplay showing urban combat environment" />
+                        alt="Placeholder — Engagement Tracking Tool interface" />
                 </div>
 
-                <h3>Working QA with Lionbridge</h3>
+                <p>During my second stint at NeonMachine as an SDET, I built a UI-based engagement tracking
+                    tool that captured TTK, accuracy, and damage data during live playtests. The tool gave QA
+                    a way to validate per-feature balance without needing to manually scrub through replay data
+                    — cutting per-feature validation time by roughly 4 hours across 90+ features, saving an
+                    estimated 360 hours of testing effort.</p>
 
-                <!-- Quote anchor target: sits right above the quote so browser scrolls here -->
-                <span id="shrapnel-quote-open" class="quote-anchor"></span>
+                <!-- TODO: Add video/screenshot of the tool in action here -->
 
-                <blockquote class="testimonial" data-quote="shrapnel">
+                <p>This was part of a broader push I made during this contract to reduce bottlenecks — if
+                    someone on the team needed a tool or a process to do their job better, I'd rather just
+                    build it than wait for it to appear on a roadmap. This contract ran through early access
+                    launch, and I supported the product through weekly release testing cycles, surfacing
+                    critical issues as they came up.</p>
+
+                <div class="sub-project-tags">
+                    <span>Unreal Engine</span>
+                    <span>Dynamic UI</span>
+                    <span>Live Playtesting</span>
+                    <span>Data Capture</span>
+                </div>
+
+            </div>
+        </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- ========================== -->
+    <!-- OVERLAY: PSO OPTIMIZATION  -->
+    <!-- ========================== -->
+    <div id="pso-overlay" class="overlay-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close PSO Optimization details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="PSO Optimization project details">
+            <div class="overlay-content">
+
+                <h2>PSO Optimization</h2>
+                <h3>SDET — NeonMachine (Contract)</h3>
+
+                <div class="tags negative" aria-label="Technologies used">
+                    <span>Unreal Engine 5</span>
+                    <span>Pipeline State Objects</span>
+                    <span>PowerShell</span>
+                    <span>Performance Profiling</span>
+                    <span>Technical Writing</span>
+                    <span>Team Coordination</span>
+                </div>
+
+                <!-- TODO: Replace with profiling trace screenshot or before/after chart -->
+                <div class="image-wrapper">
+                    <img class="hero" src="img/shrapnel/shrapnel-hero-image3.png"
+                        alt="Placeholder — PSO optimization profiling data" />
+                </div>
+
+                <p>Shrapnel was shipping with noticeable hitches caused by Pipeline State Object (PSO) cache
+                    misses — the GPU stalling while it compiled shaders on the fly. Nobody had dug into it
+                    yet, so I took the problem end-to-end: research, implementation, validation, and
+                    presenting the case to leadership.</p>
+
+                <p>I started by researching the problem through Unreal documentation and community resources,
+                    then coordinated the QA team to gather quantitative performance data on the hitches and
+                    collect pipeline cache files from test sessions — a process they weren't familiar with,
+                    so I walked them through it. I also coached team members on using Unreal Insights for
+                    performance profiling, so they could independently capture traces and validate results
+                    without needing engineering support.</p>
+
+                <p>From there, I wrote a PowerShell script to expand the collected pipeline cache files into
+                    a stable shader cache. The documented commands didn't work for our project as-is — UE5's
+                    PSO tooling is poorly documented, and I had to dig into it to find the correct parameters
+                    for our specific setup. I packaged the expanded cache into a build, had QA re-validate
+                    performance, and analyzed the before/after data.</p>
+
+                <!-- TODO: Add before/after profiling screenshots here -->
+
+                <p>The result: 41% fewer cache misses, 64% lower cost per miss. I wrote up the full analysis
+                    — root causes, tradeoffs between different mitigation strategies vs. ignoring the problem
+                    — and presented it to leadership so they could make an informed decision on how to
+                    proceed.</p>
+
+                <div class="sub-project-tags">
+                    <span>Shader Compilation</span>
+                    <span>GPU Performance</span>
+                    <span>Root Cause Analysis</span>
+                    <span>Unreal Insights</span>
+                    <span>Documentation</span>
+                </div>
+
+            </div>
+        </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- ========================== -->
+    <!-- OVERLAY: HEATMAP VIZ       -->
+    <!-- ========================== -->
+    <div id="heatmap-overlay" class="overlay-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close Heatmap Visualizer details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Heatmap Visualizer project details">
+            <div class="overlay-content">
+
+                <h2>Death Heatmap Visualizer</h2>
+                <h3>Senior Test Engineer — Lionbridge Games</h3>
+
+                <div class="tags negative" aria-label="Technologies used">
+                    <span>Python</span>
+                    <span>Plotly / Dash</span>
+                    <span>Data Visualization</span>
+                    <span>Game Design Support</span>
+                </div>
+
+                <figure class="img-caption-wrapper">
+                    <img class="img-regular" src="img/shrapnel/shrapnel-visualizer-tool.png"
+                        alt="Visualizer tool showing a map overlay with 10,000+ player death data points, shot origins, and engagement zones" />
+                    <figcaption>NDA-Compliant Visualizer Tool</figcaption>
+                </figure>
+
+                <!-- Quote anchor target -->
+                <span id="heatmap-quote-open" class="quote-anchor"></span>
+
+                <blockquote class="testimonial" data-quote="heatmap">
                     <span class="truncate">
                         What can I say about Akiah? Singularly impressive doesn't even begin to cover it.
                         Akiah started as a tester on my team, but it didn't take long for them to prove that...
-                        <a href="#shrapnel-quote-open" class="showmore">show more</a>
+                        <a href="#heatmap-quote-open" class="showmore">show more</a>
                     </span>
                     <span class="fullquote">
                         <p>What can I say about Akiah? Singularly impressive doesn't even begin to cover it. Akiah
@@ -85,7 +195,7 @@
                         <p>Beyond technical expertise, Akiah has the ability to bridge gaps between teams, QA,
                             Engineering, UI, and Game Design; ensuring that testing isn't just about finding bugs
                             but about elevating the entire game. Any team would be lucky to have them.</p>
-                        <a href="#shrapnel-overlay" class="showless">show less</a>
+                        <a href="#heatmap-overlay" class="showless">show less</a>
                     </span>
                     <footer>
                         <a href="https://www.linkedin.com/in/timothy-manley-89408b11/" target="_blank"
@@ -94,91 +204,97 @@
                     </footer>
                 </blockquote>
 
-                    <p>In 2023, I had just finished my part of coding for a stealth B2B app startup and decided that,
-                        with Covid-19 no longer the dominant concern, it was time for me to get a real job. I had been
-                        an advocate for games since I was a little kid, and got a degree in Game Development not long
-                        earlier, so I decided that it was a good time to try for it. Unfortunately, Games is something
-                        of a insider industry—so I figured my best shot was to get a basic Games Tester position and
-                        work my way up.</p>
-                    <p>So, that's what I did.</p>
-                    <p>Fast forward a year, and an opportunity opened up for a tester to be embedded in an STE role at
-                        NeonMachine: the creators of the high-profile crypto game Shrapnel. I had worked hard the year
-                        prior to make sure that I was well-positioned for a promotion: I had lept into action previously
-                        in learning the ropes so that I could onboard and support new testers, and took point on special
-                        projects whenever they were available (or whenever I noticed that it would be helpful to start
-                        one). I was given the chance to move to Seattle and take on the role. After a lot of anxiety and
-                        considerations, I flew across state lines with just a backpack and a dream.</p>
+                <p>I built this tool in Python using Plotly and Dash to help the design team understand what
+                    was actually happening in their levels. It overlaid 10,000+ gameplay events onto level
+                    geometry with full filtering — you could see where every player death occurred, where the
+                    fatal shot came from, and the method of death. Designers used it to identify chokepoints,
+                    dead zones, and engagement flow issues that weren't obvious from playtesting alone.</p>
 
-                    <!-- === SUB-PROJECT: QA & CI/CD === -->
-                    <section class="sub-project" aria-labelledby="shrapnel-qa">
-                        <h4 id="shrapnel-qa">QA Leadership &amp; CI/CD</h4>
-                        <p>While working as an STE, my focus continued to be on team support roles, including writing lots
-                            of tests and documentation, mentoring, and speaking directly to the designers and developers to
-                            determine the current state and requirements of the game. Additionally, I took over a lot of the
-                            CI/CD requirements of my team, including launching servers, tracking server-side logs and
-                            crashes, verifying VCS commits, and staying on top of the State-of-the-Project from a QA
-                            perspective.</p>
-                        <div class="sub-project-tags">
-                            <span>Jenkins</span>
-                            <span>Perforce</span>
-                            <span>Server Management</span>
-                            <span>Documentation</span>
-                        </div>
-                    </section>
+                <p>The company-specific data has been scrubbed, but I was given permission to show the
+                    anonymized version above &#x263A;&#xFE0F;</p>
 
-                    <!-- === SUB-PROJECT: VISUALIZER TOOL === -->
-                    <section class="sub-project" aria-labelledby="shrapnel-viz">
-                        <h4 id="shrapnel-viz">Death Heatmap Visualizer Tool</h4>
-                        <p>I was also given some opportunities to get back into coding, and built a visualizer tool for the
-                            designers. I of course scrubbed out all the company-specific info, but I was given permission to
-                            show the anonymized version of the app below &#x263A;&#xFE0F;</p>
-                        <figure class="img-caption-wrapper">
-                            <img class="img-regular" src="img/shrapnel/shrapnel-visualizer-tool.png"
-                                alt="Visualizer tool showing a map overlay with player death data points, shot origins, and engagement zones" />
-                            <figcaption>NDA-Compliant Visualizer Tool</figcaption>
-                        </figure>
-                        <div class="sub-project-tags">
-                            <span>Python</span>
-                            <span>Data Visualization</span>
-                            <span>Game Design Support</span>
-                        </div>
-                    </section>
+                <p>This project came out of my time embedded as an STE at NeonMachine, working on Shrapnel.
+                    I'd started at Lionbridge as a Game Test Associate — top bug reporter on a 20+ person
+                    team, 356 confirmed defects — and earned a promotion to Senior Test Engineer within 8
+                    months. Once embedded at the studio, I took on everything from CI/CD pipeline management
+                    (Jenkins, Perforce, server launches) to authoring 130+ test suites and 107 pages of
+                    documentation. I also supported 3 live service releases and coordinated up to 20 testers
+                    during structured test passes.</p>
 
-                    <!-- === SUB-PROJECT: PLACEHOLDER FOR MORE === -->
-                    <section class="sub-project" aria-labelledby="shrapnel-more">
-                        <h4 id="shrapnel-more">More Sub-Projects</h4>
-                        <p class="placeholder-note"><em>Additional sub-projects coming soon — check back for details on
-                                automation work, test frameworks, and more.</em></p>
-                    </section>
+                <p>After supporting three live releases, the team was restructured. I was given the option to
+                    move back to Idaho, but I'd grown to like Seattle too much for that &#x1F601;</p>
 
-                    <p>Unfortunately, Games is also a turbulent industry. After supporting three live releases of the
-                        Shrapnel Game, enjoyed by many live players (specific numbers would likely breach my NDA &#x1F609;), I,
-                        and the rest of my team, were reassigned or let go. I was given the choice to move back to
-                        Idaho, but decided that I liked Seattle too much to do that.</p>
+                <h5>More About Shrapnel</h5>
+                <p>Watch on Youtube: <a class="text-link" href="https://youtu.be/KNTVpHT-Xgk?si=kiNkU6AyIDlWUVv7"
+                        target="_blank" rel="noopener noreferrer">https://youtu.be/KNTVpHT-Xgk
+                        <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
+                <p>Shrapnel Website: <a class="text-link" href="https://www.shrapnel.com/"
+                        target="_blank" rel="noopener noreferrer">https://www.shrapnel.com
+                        <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
 
-                    <p>Overall, I'm proud of the work that I did, happy with the people I met, and glad for the
-                        experience &#x1F601;</p>
-
-                    <figure class="img-caption-wrapper">
-                        <img class="img-regular" src="img/shrapnel/shrapnel-hero-image2.png"
-                            alt="Shrapnel multiplayer mode screenshot" />
-                        <figcaption>Shrapnel's upcoming Multiplayer Mode</figcaption>
-                    </figure>
-
-                    <h5>More About Shrapnel</h5>
-                    <p>Watch on Youtube: <a class="text-link" href="https://youtu.be/KNTVpHT-Xgk?si=kiNkU6AyIDlWUVv7"
-                            target="_blank" rel="noopener noreferrer">https://youtu.be/KNTVpHT-Xgk
-                            <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
-                    <p>Shrapnel Website: <a class="text-link" href="https://www.shrapnel.com/"
-                            target="_blank" rel="noopener noreferrer">https://www.shrapnel.com
-                            <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
-
-                    <div class="image-wrapper">
-                        <img class="hero" src="img/shrapnel/shrapnel-hero-image.png"
-                            alt="Shrapnel key art" />
-                    </div>
-
+                <div class="image-wrapper">
+                    <img class="hero" src="img/shrapnel/shrapnel-hero-image.png"
+                        alt="Shrapnel key art" />
                 </div>
+
+            </div>
+        </div>
+        <a href="#byline" class="overlay-close" aria-label="Close">
+            <i class="ri-close-large-line" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- ========================== -->
+    <!-- OVERLAY: RADAR MINIMAP UI  -->
+    <!-- ========================== -->
+    <div id="radar-overlay" class="overlay-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close Radar Minimap UI details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Radar Minimap UI project details">
+            <div class="overlay-content">
+
+                <h2>Radar Minimap UI</h2>
+                <h3>SDET — NeonMachine (Contract)</h3>
+
+                <div class="tags negative" aria-label="Technologies used">
+                    <span>Unreal Engine 5</span>
+                    <span>Blueprints</span>
+                    <span>UI / UX</span>
+                    <span>Game Design</span>
+                    <span>Prototyping</span>
+                </div>
+
+                <!-- TODO: Replace with better screenshot if available -->
+                <figure class="img-caption-wrapper">
+                    <img class="img-regular" src="img/radar/radar-screenshot.png"
+                        alt="Radar Minimap UI prototype showing enemy detection and objective markers overlaid on gameplay" />
+                    <figcaption>Radar Minimap UI Prototype (displayed with NeonMachine's permission)</figcaption>
+                </figure>
+
+                <p>I built this as a prototype to test an alternative approach for enemy detection and
+                    objective signaling in Shrapnel. The existing system worked, but I thought a radar-style
+                    minimap could give players faster spatial awareness without cluttering the main viewport.
+                    I wrote a design proposal, got the go-ahead, and built the prototype in Unreal Blueprints.</p>
+
+                <p>The UI in the screenshot is a bit busy because it's running alongside the legacy system
+                    for comparison — but it shows the radar in action with enemy positions, objective markers,
+                    and directional indicators all feeding through the minimap.</p>
+
+                <p>The source files (blueprints, curves, structs, and materials) are available on GitHub.
+                    The proprietary gameplay code it references has been stripped out, but the radar system
+                    itself is all there.</p>
+
+                <h5>Source Code</h5>
+                <p>GitHub: <a class="text-link"
+                        href="https://github.com/Ill-Satisfaction/Radar-Minimap-UI"
+                        target="_blank" rel="noopener noreferrer">Ill-Satisfaction/Radar-Minimap-UI
+                        <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
+
+                <div class="sub-project-tags">
+                    <span>Blueprints</span>
+                    <span>Materials</span>
+                    <span>Structs</span>
+                    <span>UI Design</span>
+                </div>
+
             </div>
         </div>
         <a href="#byline" class="overlay-close" aria-label="Close">
@@ -192,31 +308,25 @@
         <a href="#byline" class="overlay-background" aria-label="Close NASA SUITS details"></a>
         <div class="overlay-content-wrapper" role="dialog" aria-label="NASA SUITS project details">
             <div class="overlay-content">
-                <h2>NASA SUITS Research Team</h2>
-                <h3>Team Lead, VR Programmer</h3>
+                <h2>NASA SUITS</h2>
+                <h3>XR Developer &#x2192; Team Lead — Boise State University</h3>
 
                 <div class="tags negative" aria-label="Technologies used">
                     <span>Unity</span>
                     <span>C#</span>
-                    <span>AR</span>
-                    <span>VR</span>
+                    <span>AR / VR</span>
+                    <span>HoloLens 2</span>
+                    <span>Quest 2</span>
+                    <span>MRTK</span>
+                    <span>Photon Networking</span>
                     <span>Project Management</span>
-                    <span>Agile Workflow / Kanban</span>
-                    <span>UI</span>
-                    <span>Unity Multiplayer</span>
-                    <span>Mixed Reality Toolkit</span>
-                    <span>GitHub</span>
-                    <span>PlasticSCM</span>
                     <span>Technical Writing</span>
-                    <span>Presentations</span>
                 </div>
 
                 <div class="image-wrapper">
                     <img class="hero" src="img/nasa-suits/hero.jpg"
                         alt="NASA SUITS team working with VR equipment" />
                 </div>
-
-                <h3>XR Research with NASA</h3>
 
                 <span id="suits-quote-open" class="quote-anchor"></span>
 
@@ -246,27 +356,30 @@
                     </footer>
                 </blockquote>
 
-                    <p>A number of years ago, in 2019, I was invited to join an on-campus research group exploring XR UI
-                        features with NASA. At the time I was working on a degree in Games Development. Ironically,
-                        between SUITs and VARScent, I spent more time in that degree doing useful research than making
-                        games. Still, though, NASA Sounded awesome and VR was the hot new thing, so I dove into it</p>
+                <p>I spent three years on NASA's SUITS Challenge, building AR navigation and communication
+                    tools for future lunar EVA missions. The project used Unity, C#, and MRTK targeting
+                    HoloLens 2 and Quest 2. We tested in conditions that broke everything: high-reflectivity
+                    sand dunes, volcanic rock, caves with no natural lighting, and low-connectivity
+                    environments.</p>
 
-                    <figure class="img-caption-wrapper">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/X4m33WfXC3w?si=NQrBMar3qwckt_Ee"
-                            title="ARSIS Overview video" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                            loading="lazy"></iframe>
-                        <figcaption>ARSIS Overview</figcaption>
-                    </figure>
+                <figure class="img-caption-wrapper">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/X4m33WfXC3w?si=NQrBMar3qwckt_Ee"
+                        title="ARSIS Overview video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                        loading="lazy"></iframe>
+                    <figcaption>ARSIS Overview</figcaption>
+                </figure>
 
-                    <p>In my first year on the project, I built navigation tools in C#. A lot of videogame features were
-                        untested in VR, so we went about testing them. My personal feature was the 'Beacons' feature and
-                        the 'Minimap' function. Between these two features, you could look out over terrain and see
-                        points of interest through walls or other obstacles, as well as navigate to them from far away
-                        with a heading and a distance. You can see both features in this video that we took during some
-                        outreach at my university:</p>
+                <!-- === SUB-PROJECT: NAVIGATION TOOLS === -->
+                <section class="sub-project" aria-labelledby="suits-nav">
+                    <h4 id="suits-nav">AR Navigation — Beacons &amp; Minimap</h4>
+
+                    <p>My first year focused on building navigation features in C#. A lot of game-style UI
+                        patterns were untested in AR, so we went about testing them. I built a 'Beacons' system
+                        and a 'Minimap' — together, they let astronauts see points of interest through terrain
+                        and obstacles, with heading and distance, and navigate to them from far away.</p>
 
                     <figure class="img-caption-wrapper">
                         <iframe width="560" height="315"
@@ -278,13 +391,21 @@
                         <figcaption>ARSIS Features as of Spring 2022</figcaption>
                     </figure>
 
-                    <p>After my first year on the project, I was asked to take over as Team Lead. This was a very
-                        educational position for me, because it gave me my first real chance to practice the Project
-                        Management skills that the C.S. degree taught in their "Agile" class. I also was able to put my
-                        design experience from my Highschool internship into use, leading design discussions with team
-                        members to meet NASA challenge requirements, as well as personally writing the majority of a 30
-                        page technical research proposal, which was accepted by NASA and the Idaho Space Grant
-                        Consortium and allowed the team to perform the work (below).</p>
+                    <div class="sub-project-tags">
+                        <span>C#</span>
+                        <span>AR UI</span>
+                        <span>Spatial Navigation</span>
+                    </div>
+                </section>
+
+                <!-- === SUB-PROJECT: TEAM LEAD === -->
+                <section class="sub-project" aria-labelledby="suits-lead">
+                    <h4 id="suits-lead">Team Lead &amp; Research</h4>
+
+                    <p>After my first year I took over as Team Lead. I grew the team from 6 to 15 members
+                        during COVID through targeted outreach, led design discussions to meet NASA challenge
+                        requirements, and wrote the majority of a 30-page technical proposal that was accepted
+                        by NASA and the Idaho Space Grant Consortium.</p>
 
                     <figure class="img-caption-wrapper">
                         <a href="files/ARSIS%205.0%20Proposal%20Technical%20Section.pdf" download class="file-download">
@@ -292,99 +413,56 @@
                         </a>
                     </figure>
 
-                    <p>With COVID-19 in full swing, the main objective of the group was survival, and we succeeded on
-                        that objective. The SUITs Challenge team is still around today and operational. Our secondary
-                        objectives of trying new things in XR, presenting them to NASA, and performing outreach and
-                        academic papers, were also all successful to varying degrees. We discovered a lot more 'it
-                        doesn't works's than 'it works's, but, hey, that's research!</p>
+                    <p>We co-published 4 research papers (HCI International, SpaceCHI/MIT Media Lab) and
+                        presented and demonstrated the system at Johnson Space Center. We discovered a lot more
+                        "it doesn't work"s than "it works"s — but hey, that's research!</p>
 
-                    <figure class="img-caption-wrapper">
-                        <img class="img-regular" src="img/nasa-suits/hero4.jpg"
-                            alt="Team preparing equipment for live testing at Johnson Space Center" />
-                        <figcaption>Preparation for Live Testing at JSC</figcaption>
-                    </figure>
-
-                    <p>After my year as Team Lead, and a bonus semester to get some ducks in a row with my Major switch
-                        from Computer Science to Games, I graduated, and left the position for another Undergraduate
-                        Researcher to fill.</p>
-                    <p>Overall, I really enjoy my time with SUITs. It was a lot of work, and a lot
-                        of learning. Everything XR was back then, because the field was so new, and we were all
-                        undergrads. I remember the switch
-                        from MRTK 2 to 3 throwing our team into disarray until we could adapt, and figuring out how to
-                        do checkins for GitHub (to avoid the large binary file problem) was its own adventure &#x1F606;</p>
-
-                    <figure class="img-caption-wrapper">
-                        <img class="img-regular" src="img/nasa-suits/hero3.jpg"
-                            alt="Team receiving recognition at Johnson Space Center" />
-                        <figcaption>Recognition at Johnson Space Center</figcaption>
-                    </figure>
-
-                    <figure class="img-caption-wrapper">
-                        <img class="img-regular" src="img/nasa-suits/unity-environment.jpg"
-                            alt="Ground control portal built in Unity" />
-                        <figcaption>Ground Control Portal</figcaption>
-                    </figure>
-
-                    <h5>More About NASA SUITS</h5>
-                    <p>Watch on Youtube: <a class="text-link"
-                            href="https://youtu.be/X4m33WfXC3w?si=PogdcaTSssU2HAmc"
-                            target="_blank" rel="noopener noreferrer">https://youtu.be/X4m33WfXC3w
-                            <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
-                    <p>SUITS Website: <a class="text-link"
-                            href="https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/"
-                            target="_blank" rel="noopener noreferrer">nasa.gov/learning-resources/suits
-                            <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
-
-                    <div class="image-wrapper">
-                        <img class="hero" src="img/nasa-suits/features.png"
-                            alt="ARSIS feature overview diagram" />
+                    <div class="sub-project-tags">
+                        <span>Project Management</span>
+                        <span>Technical Writing</span>
+                        <span>Published Research</span>
+                        <span>NASA</span>
                     </div>
+                </section>
 
-            </div>
-        </div>
-        <a href="#byline" class="overlay-close" aria-label="Close">
-            <i class="ri-close-large-line" aria-hidden="true"></i></a>
-    </div>
+                <figure class="img-caption-wrapper">
+                    <img class="img-regular" src="img/nasa-suits/hero4.jpg"
+                        alt="Team preparing equipment for live testing at Johnson Space Center" />
+                    <figcaption>Preparation for Live Testing at JSC</figcaption>
+                </figure>
 
-    <!-- ========================== -->
-    <!-- OVERLAY: DINO WARS         -->
-    <!-- ========================== -->
-    <div id="dinowars-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-background" aria-label="Close Dino Wars details"></a>
-        <div class="overlay-content-wrapper" role="dialog" aria-label="Dino Wars project details">
-            <div class="overlay-content">
-                <h2>Dino Wars</h2>
-                <p>Details Coming Soon!...</p>
-            </div>
-        </div>
-        <a href="#byline" class="overlay-close" aria-label="Close">
-            <i class="ri-close-large-line" aria-hidden="true"></i></a>
-    </div>
+                <p>The SUITS Challenge team is still operational today — something I'm quietly proud of,
+                    given that keeping a student research group alive through COVID was its own kind of
+                    engineering challenge. I remember the MRTK 2 to 3 migration throwing us into disarray,
+                    and figuring out Git LFS for binary assets being its own adventure &#x1F606;</p>
 
-    <!-- ========================== -->
-    <!-- OVERLAY: PUPPET KNIGHT     -->
-    <!-- ========================== -->
-    <div id="puppetknight-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-background" aria-label="Close Puppet Knight details"></a>
-        <div class="overlay-content-wrapper" role="dialog" aria-label="Puppet Knight project details">
-            <div class="overlay-content">
-                <h2>Puppet Knight</h2>
-                <p>Details about the project go here...</p>
-            </div>
-        </div>
-        <a href="#byline" class="overlay-close" aria-label="Close">
-            <i class="ri-close-large-line" aria-hidden="true"></i></a>
-    </div>
+                <figure class="img-caption-wrapper">
+                    <img class="img-regular" src="img/nasa-suits/hero3.jpg"
+                        alt="Team receiving recognition at Johnson Space Center" />
+                    <figcaption>Recognition at Johnson Space Center</figcaption>
+                </figure>
 
-    <!-- ========================== -->
-    <!-- OVERLAY: SIXGUNS           -->
-    <!-- ========================== -->
-    <div id="sixguns-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-background" aria-label="Close SixGuns details"></a>
-        <div class="overlay-content-wrapper" role="dialog" aria-label="SixGuns project details">
-            <div class="overlay-content">
-                <h2>SixGuns</h2>
-                <p>Details about the project go here...</p>
+                <figure class="img-caption-wrapper">
+                    <img class="img-regular" src="img/nasa-suits/unity-environment.jpg"
+                        alt="Ground control portal built in Unity" />
+                    <figcaption>Ground Control Portal</figcaption>
+                </figure>
+
+                <h5>More About NASA SUITS</h5>
+                <p>Watch on Youtube: <a class="text-link"
+                        href="https://youtu.be/X4m33WfXC3w?si=PogdcaTSssU2HAmc"
+                        target="_blank" rel="noopener noreferrer">https://youtu.be/X4m33WfXC3w
+                        <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
+                <p>SUITS Website: <a class="text-link"
+                        href="https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/"
+                        target="_blank" rel="noopener noreferrer">nasa.gov/learning-resources/suits
+                        <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
+
+                <div class="image-wrapper">
+                    <img class="hero" src="img/nasa-suits/features.png"
+                        alt="ARSIS feature overview diagram" />
+                </div>
+
             </div>
         </div>
         <a href="#byline" class="overlay-close" aria-label="Close">
@@ -398,8 +476,18 @@
         <a href="#byline" class="overlay-background" aria-label="Close Mobile Development details"></a>
         <div class="overlay-content-wrapper" role="dialog" aria-label="Mobile Development project details">
             <div class="overlay-content">
-                <h2>Mobile Projects</h2>
+                <h2>Mobile Development</h2>
+                <h3>CodePath — Android Development</h3>
+
+                <div class="tags negative" aria-label="Technologies used">
+                    <span>Java</span>
+                    <span>Android Studio</span>
+                    <span>Mobile Development</span>
+                </div>
+
                 <p>Details about the project go here...</p>
+                <!-- TODO: Flesh out with CodePath project details -->
+
             </div>
         </div>
         <a href="#byline" class="overlay-close" aria-label="Close">
@@ -407,14 +495,80 @@
     </div>
 
     <!-- ========================== -->
-    <!-- OVERLAY: MISC              -->
+    <!-- OVERLAY: STUDENT PROJECTS  -->
     <!-- ========================== -->
-    <div id="misc-overlay" class="overlay-wrapper">
-        <a href="#byline" class="overlay-background" aria-label="Close Misc Projects details"></a>
-        <div class="overlay-content-wrapper" role="dialog" aria-label="Misc projects details">
+    <div id="student-overlay" class="overlay-wrapper">
+        <a href="#byline" class="overlay-background" aria-label="Close Student Projects details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Student projects details">
             <div class="overlay-content">
-                <h2>Misc. Projects</h2>
-                <p>Details about the project go here...</p>
+                <h2>Student Projects</h2>
+                <h3>Boise State University — Games, Interactive Media &amp; Mobile Development</h3>
+
+                <div class="tags negative" aria-label="Technologies used">
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>VR</span>
+                    <span>Inverse Kinematics</span>
+                    <span>Shaders</span>
+                    <span>Photon Networking</span>
+                    <span>PubSub Architecture</span>
+                </div>
+
+                <!-- === SUB-PROJECT: PUPPET KNIGHT === -->
+                <section class="sub-project" aria-labelledby="student-pknight">
+                    <h4 id="student-pknight">Puppet Knight</h4>
+
+                    <figure class="img-caption-wrapper">
+                        <img class="img-regular" src="homepage_assets/pknight-hero.gif"
+                            alt="Puppet Knight gameplay showing inverse kinematics" />
+                        <figcaption>Puppet Knight — VR Inverse Kinematics</figcaption>
+                    </figure>
+
+                    <p>Details about the project go here...</p>
+                    <!-- TODO: Flesh out Puppet Knight details -->
+
+                    <div class="sub-project-tags">
+                        <span>Unity</span>
+                        <span>Inverse Kinematics</span>
+                        <span>VR</span>
+                        <span>Shaders</span>
+                    </div>
+                </section>
+
+                <!-- === SUB-PROJECT: DINO WARS === -->
+                <section class="sub-project" aria-labelledby="student-dinowars">
+                    <h4 id="student-dinowars">Dino Wars</h4>
+
+                    <figure class="img-caption-wrapper">
+                        <img class="img-regular" src="img/dino-wars/splash.PNG"
+                            alt="Dino Wars splash screen" />
+                        <figcaption>Dino Wars</figcaption>
+                    </figure>
+
+                    <p>Details about the project go here...</p>
+                    <!-- TODO: Flesh out Dino Wars details -->
+
+                    <div class="sub-project-tags">
+                        <span>Unity</span>
+                        <span>Photon Networking</span>
+                        <span>Kanban</span>
+                    </div>
+                </section>
+
+                <!-- === SUB-PROJECT: SIXGUNS === -->
+                <section class="sub-project" aria-labelledby="student-sixguns">
+                    <h4 id="student-sixguns">SixGuns</h4>
+
+                    <p>Details about the project go here...</p>
+                    <!-- TODO: Flesh out SixGuns details -->
+
+                    <div class="sub-project-tags">
+                        <span>Unity</span>
+                        <span>PubSub Architecture</span>
+                        <span>Dynamic UI</span>
+                    </div>
+                </section>
+
             </div>
         </div>
         <a href="#byline" class="overlay-close" aria-label="Close">
@@ -428,99 +582,95 @@
     <main id="main-content">
         <div class="grid-wrapper">
 
-            <!-- Shrapnel — big hero card -->
-            <a href="#shrapnel-overlay" class="card big hero" aria-label="View Shrapnel project details">
+            <!-- Engagement Tracking Tool (DUI) — big hero card -->
+            <a href="#dui-overlay" class="card big hero" aria-label="View Engagement Tracking Tool project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h2>Shrapnel</h2>
+                        <h2>Engagement Tracker</h2>
                     </div>
                     <div class="tags">
                         <span>Unreal</span>
-                        <span>Jira</span>
-                        <span>Jenkins</span>
-                        <span>AccelByte</span>
-                        <span>Perforce</span>
+                        <span>UI / UX</span>
+                        <span>Python</span>
+                        <span>Live Service QA</span>
                     </div>
                 </div>
-                <!-- Static poster shown by default; video revealed on hover via CSS -->
+                <!-- TODO: Replace with DUI screenshot/video -->
                 <img class="card-poster" src="img/shrapnel/shrapnel-hero-image3.png"
-                    alt="Shrapnel gameplay" />
+                    alt="Engagement Tracking Tool" />
                 <video autoplay muted loop playsinline class="card-video" aria-hidden="true">
                     <source src="homepage_assets/shrapnel-hero.mov" type="video/mp4">
                 </video>
             </a>
 
-            <!-- NASA SUITS — secondary hero: wide on narrow screens, tall on wide -->
-            <a href="#suits-overlay" class="card secondary-hero hero" aria-label="View NASA SUITS project details">
+            <!-- Death Heatmap Visualizer — secondary hero -->
+            <a href="#heatmap-overlay" class="card secondary-hero hero" aria-label="View Death Heatmap Visualizer project details">
+                <div class="info-block">
+                    <div class="portfo_text">
+                        <h2>Death Heatmap Visualizer</h2>
+                    </div>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Plotly / Dash</span>
+                        <span>Data Viz</span>
+                        <span>Game Design</span>
+                    </div>
+                </div>
+                <img class="card-poster" src="img/shrapnel/shrapnel-visualizer-tool.png"
+                    alt="Heatmap Visualizer tool" />
+            </a>
+
+            <!-- PSO Optimization — standard -->
+            <a href="#pso-overlay" class="card" aria-label="View PSO Optimization project details">
+                <div class="info-block">
+                    <div class="portfo_text">
+                        <h2>PSO Optimization</h2>
+                    </div>
+                    <div class="tags">
+                        <span>Unreal</span>
+                        <span>GPU Performance</span>
+                        <span>Technical Writing</span>
+                    </div>
+                </div>
+                <!-- TODO: Replace with profiling screenshot -->
+                <img class="card-poster" src="img/shrapnel/shrapnel-hero-image.png"
+                    alt="PSO Optimization profiling" />
+            </a>
+
+            <!-- Radar Minimap UI — standard -->
+            <a href="#radar-overlay" class="card" aria-label="View Radar Minimap UI project details">
+                <div class="info-block">
+                    <div class="portfo_text">
+                        <h2>Radar Minimap UI</h2>
+                    </div>
+                    <div class="tags">
+                        <span>Unreal</span>
+                        <span>Blueprints</span>
+                        <span>UI / UX</span>
+                    </div>
+                </div>
+                <!-- TODO: Replace with radar screenshot -->
+                <img class="card-poster" src="img/radar/radar-screenshot.png"
+                    alt="Radar Minimap UI prototype" />
+            </a>
+
+            <!-- NASA SUITS — tall -->
+            <a href="#suits-overlay" class="card tall" aria-label="View NASA SUITS project details">
                 <div class="info-block">
                     <div class="portfo_text">
                         <h2>NASA SUITS</h2>
                     </div>
                     <div class="tags">
                         <span>Unity</span>
-                        <span>VR / AR</span>
-                        <span>Photon Networking</span>
-                        <span>MRTK</span>
-                        <span>GitHub</span>
-                        <span>Kanban / Agile</span>
+                        <span>AR / VR</span>
+                        <span>HoloLens 2</span>
+                        <span>Published Research</span>
                     </div>
                 </div>
                 <img class="card-poster" src="img/nasa-suits/hero.jpg"
                     alt="NASA SUITS team" />
                 <video autoplay muted loop playsinline class="card-video" aria-hidden="true">
                     <source src="homepage_assets/suits-hero.mov" type="video/mp4">
-                </video>
-            </a>
-
-            <!-- Dino Wars — tall -->
-            <a href="#dinowars-overlay" class="card" aria-label="View Dino Wars project details">
-                <div class="info-block">
-                    <div class="portfo_text">
-                        <h2>Dino Wars</h2>
-                    </div>
-                    <div class="tags">
-                        <span>Unity</span>
-                        <span>Photon Networking</span>
-                        <span>Kanban</span>
-                    </div>
-                </div>
-                <img class="card-poster" src="img/dino-wars/splash.PNG"
-                    alt="Dino Wars splash screen" />
-            </a>
-
-            <!-- Puppet Knight — tall -->
-            <a href="#puppetknight-overlay" class="card tall" aria-label="View Puppet Knight project details">
-                <div class="info-block">
-                    <div class="portfo_text">
-                        <h2>Puppet Knight</h2>
-                    </div>
-                    <div class="tags">
-                        <span>Unity</span>
-                        <span>Inverse Kinematics</span>
-                        <span>VR</span>
-                        <span>Shaders</span>
-                    </div>
-                </div>
-                <img class="card-poster" src="homepage_assets/pknight-hero.gif"
-                    alt="Puppet Knight gameplay showing inverse kinematics" />
-            </a>
-
-            <!-- SixGuns -->
-            <a href="#sixguns-overlay" class="card" aria-label="View SixGuns project details">
-                <div class="info-block">
-                    <div class="portfo_text">
-                        <h2>SixGuns</h2>
-                    </div>
-                    <div class="tags">
-                        <span>Unity</span>
-                        <span>PubSub Architecture</span>
-                        <span>Dynamic UI</span>
-                    </div>
-                </div>
-                <img class="card-poster" src="img/shrapnel/shrapnel-hero-image.png"
-                    alt="SixGuns project" />
-                <video autoplay muted loop playsinline class="card-video" aria-hidden="true">
-                    <source src="homepage_assets/sixgun-hero.mov" type="video/mp4">
                 </video>
             </a>
 
@@ -533,28 +683,27 @@
                     <div class="tags">
                         <span>Java</span>
                         <span>Android Studio</span>
-                        <span>Mobile Development</span>
+                        <span>CodePath</span>
                     </div>
                 </div>
                 <img class="card-poster" src="homepage_assets/android-hero.gif"
                     alt="Android app development projects" />
             </a>
 
-            <!-- Explorations in C# -->
-            <a href="#misc-overlay" class="card" aria-label="View C# Explorations project details">
+            <!-- Student Projects — combined -->
+            <a href="#student-overlay" class="card" aria-label="View Student Projects">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h2>Explorations in C#</h2>
+                        <h2>Student Projects</h2>
                     </div>
                     <div class="tags">
+                        <span>Unity</span>
+                        <span>VR</span>
                         <span>C#</span>
-                        <span>Prototyping</span>
-                        <span>Debugging</span>
                     </div>
                 </div>
-                <img class="card-poster"
-                    src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80"
-                    alt="Code on screen" />
+                <img class="card-poster" src="homepage_assets/pknight-hero.gif"
+                    alt="Student game projects" />
             </a>
 
         </div>
