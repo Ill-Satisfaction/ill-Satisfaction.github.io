@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akiah Tullis — Code, QA</title>
+    <title>Akiah Tullis Portfolio</title>
     <meta name="description" content="Portfolio of Akiah Tullis — Senior Test Engineer, Game Developer, and XR Researcher.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
-        <h1 id="byline">Akiah ( Code, QA ) ;</h1>
+        <h1 id="byline" aria-label="Akiah's Portfolio"><span class="tok-name">Akiah</span><span class="tok-punct">.</span><span class="tok-fn">Portfolio</span><span class="tok-punct">();</span></h1>
         <nav aria-label="Main navigation">
             <ul>
                 <li><a href="#byline" class="active" aria-current="page">{ projects }</a></li>
@@ -48,10 +48,9 @@
                     <span>Live Service QA</span>
                 </div>
 
-                <!-- TODO: Replace with DUI screenshot or video -->
                 <div class="image-wrapper">
-                    <img class="hero" src="img/shrapnel/shrapnel-hero-image3.png"
-                        alt="Placeholder — Engagement Tracking Tool interface" />
+                    <img class="hero" src="img/engagement-tracker/hero.jpg"
+                        alt="Engagement Tracking Tool interface" />
                 </div>
 
                 <p>During my second stint at NeonMachine as an SDET, I built a UI-based engagement tracking
@@ -101,10 +100,9 @@
                     <span>Team Coordination</span>
                 </div>
 
-                <!-- TODO: Replace with profiling trace screenshot or before/after chart -->
                 <div class="image-wrapper">
-                    <img class="hero" src="img/shrapnel/shrapnel-hero-image3.png"
-                        alt="Placeholder — PSO optimization profiling data" />
+                    <img class="hero" src="img/pso/hero.jpg"
+                        alt="PSO optimization profiling data" />
                 </div>
 
                 <p>Shrapnel was shipping with noticeable hitches caused by Pipeline State Object (PSO) cache
@@ -165,7 +163,7 @@
                 </div>
 
                 <figure class="img-caption-wrapper">
-                    <img class="img-regular" src="img/shrapnel/shrapnel-visualizer-tool.png"
+                    <img class="img-regular" src="img/heatmap/visualizer-tool.png"
                         alt="Visualizer tool showing a map overlay with 10,000+ player death data points, shot origins, and engagement zones" />
                     <figcaption>NDA-Compliant Visualizer Tool</figcaption>
                 </figure>
@@ -232,11 +230,6 @@
                         target="_blank" rel="noopener noreferrer">https://www.shrapnel.com
                         <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
 
-                <div class="image-wrapper">
-                    <img class="hero" src="img/shrapnel/shrapnel-hero-image.png"
-                        alt="Shrapnel key art" />
-                </div>
-
             </div>
         </div>
         <a href="#byline" class="overlay-close" aria-label="Close">
@@ -262,9 +255,8 @@
                     <span>Prototyping</span>
                 </div>
 
-                <!-- TODO: Replace with better screenshot if available -->
                 <figure class="img-caption-wrapper">
-                    <img class="img-regular" src="img/radar/radar-screenshot.png"
+                    <img class="img-regular" src="img/radar/screenshot.png"
                         alt="Radar Minimap UI prototype showing enemy detection and objective markers overlaid on gameplay" />
                     <figcaption>Radar Minimap UI Prototype (displayed with NeonMachine's permission)</figcaption>
                 </figure>
@@ -408,7 +400,7 @@
                         by NASA and the Idaho Space Grant Consortium.</p>
 
                     <figure class="img-caption-wrapper">
-                        <a href="files/ARSIS%205.0%20Proposal%20Technical%20Section.pdf" download class="file-download">
+                        <a href="files/arsis-5-proposal.pdf" download class="file-download">
                             <i class="ri-file-download-line" aria-hidden="true"></i> SUITS PROPOSAL
                         </a>
                     </figure>
@@ -426,7 +418,7 @@
                 </section>
 
                 <figure class="img-caption-wrapper">
-                    <img class="img-regular" src="img/nasa-suits/hero4.jpg"
+                    <img class="img-regular" src="img/nasa-suits/jsc-prep.jpg"
                         alt="Team preparing equipment for live testing at Johnson Space Center" />
                     <figcaption>Preparation for Live Testing at JSC</figcaption>
                 </figure>
@@ -437,7 +429,7 @@
                     and figuring out Git LFS for binary assets being its own adventure &#x1F606;</p>
 
                 <figure class="img-caption-wrapper">
-                    <img class="img-regular" src="img/nasa-suits/hero3.jpg"
+                    <img class="img-regular" src="img/nasa-suits/jsc-recognition.jpg"
                         alt="Team receiving recognition at Johnson Space Center" />
                     <figcaption>Recognition at Johnson Space Center</figcaption>
                 </figure>
@@ -470,104 +462,57 @@
     </div>
 
     <!-- ========================== -->
-    <!-- OVERLAY: MOBILE DEV        -->
+    <!-- OVERLAY: VARSCENT          -->
     <!-- ========================== -->
-    <div id="mobiledev-overlay" class="overlay-wrapper">
-        <div class="overlay-content-wrapper" role="dialog" aria-label="Mobile Development project details">
-        <a href="#byline" class="overlay-background" aria-label="Close Mobile Development details"></a>
+    <div id="varscent-overlay" class="overlay-wrapper">
+        <div class="overlay-content-wrapper" role="dialog" aria-label="VARScent project details">
+        <a href="#byline" class="overlay-background" aria-label="Close VARScent details"></a>
             <div class="overlay-content">
-                <h2>Mobile Development</h2>
-                <h3>CodePath — Android Development</h3>
 
-                <div class="tags negative" aria-label="Technologies used">
-                    <span>Java</span>
-                    <span>Android Studio</span>
-                    <span>Mobile Development</span>
-                </div>
-
-                <p>Details about the project go here...</p>
-                <!-- TODO: Flesh out with CodePath project details -->
-
-            </div>
-        </div>
-        <a href="#byline" class="overlay-close" aria-label="Close">
-            <i class="ri-close-large-line" aria-hidden="true"></i></a>
-    </div>
-
-    <!-- ========================== -->
-    <!-- OVERLAY: STUDENT PROJECTS  -->
-    <!-- ========================== -->
-    <div id="student-overlay" class="overlay-wrapper">
-        <div class="overlay-content-wrapper" role="dialog" aria-label="Student projects details">
-        <a href="#byline" class="overlay-background" aria-label="Close Student Projects details"></a>
-            <div class="overlay-content">
-                <h2>Student Projects</h2>
-                <h3>Boise State University — Games, Interactive Media &amp; Mobile Development</h3>
+                <h2>VARScent</h2>
+                <h3>Research Developer — Boise State University (Paid Research)</h3>
 
                 <div class="tags negative" aria-label="Technologies used">
                     <span>Unity</span>
                     <span>C#</span>
-                    <span>VR</span>
-                    <span>Inverse Kinematics</span>
-                    <span>Shaders</span>
-                    <span>Photon Networking</span>
-                    <span>PubSub Architecture</span>
+                    <span>Arduino</span>
+                    <span>Hardware Integration</span>
+                    <span>VR Research</span>
                 </div>
 
-                <!-- === SUB-PROJECT: PUPPET KNIGHT === -->
-                <section class="sub-project" aria-labelledby="student-pknight">
-                    <h4 id="student-pknight">Puppet Knight</h4>
+                <div class="image-wrapper">
+                    <img class="hero" src="img/varscent/hero.png"
+                        alt="VARScent scent distribution system" />
+                </div>
 
-                    <figure class="img-caption-wrapper">
-                        <img class="img-regular" src="homepage_assets/pknight-hero.gif"
-                            alt="Puppet Knight gameplay showing inverse kinematics" />
-                        <figcaption>Puppet Knight — VR Inverse Kinematics</figcaption>
-                    </figure>
+                <p>VARScent was a paid research project at Boise State, summer 2020, exploring
+                    scent-based VR therapies as a potential aid in Alzheimer's research. I was the
+                    sole developer on a short-term contract, building the software and hardware
+                    bridge that let a Unity scene trigger real-world scent distribution.</p>
 
-                    <p>Details about the project go here...</p>
-                    <!-- TODO: Flesh out Puppet Knight details -->
+                <p>I wrote Arduino firmware (C/C++) to drive a proprietary micropump assembly for
+                    dispensing scents, then used the Ardity plugin in Unity (C#) to open a serial
+                    connection between the runtime and the hardware. In-world triggers and hitboxes
+                    fired scent events in real time. I built a small test level in Unity to
+                    demonstrate the full pipeline end-to-end, plus a diagnostic test sequence in
+                    Arduino that the research team could use to validate hardware state independently
+                    of the Unity side.</p>
 
-                    <div class="sub-project-tags">
-                        <span>Unity</span>
-                        <span>Inverse Kinematics</span>
-                        <span>VR</span>
-                        <span>Shaders</span>
-                    </div>
-                </section>
+                <p>I also surveyed other teams' approaches to smell-in-VR and reported findings to
+                    the supervising professors to inform the broader research direction.</p>
 
-                <!-- === SUB-PROJECT: DINO WARS === -->
-                <section class="sub-project" aria-labelledby="student-dinowars">
-                    <h4 id="student-dinowars">Dino Wars</h4>
+                <p>Because it was a single-summer stint, I spent the final weeks documenting the
+                    architecture, hardware interface, and diagnostic procedure so the regular
+                    student research team could continue development after I left. The frameworks
+                    I built remained the foundation for their subsequent work.</p>
 
-                    <figure class="img-caption-wrapper">
-                        <img class="img-regular" src="img/dino-wars/splash.PNG"
-                            alt="Dino Wars splash screen" />
-                        <figcaption>Dino Wars</figcaption>
-                    </figure>
-
-                    <p>Details about the project go here...</p>
-                    <!-- TODO: Flesh out Dino Wars details -->
-
-                    <div class="sub-project-tags">
-                        <span>Unity</span>
-                        <span>Photon Networking</span>
-                        <span>Kanban</span>
-                    </div>
-                </section>
-
-                <!-- === SUB-PROJECT: SIXGUNS === -->
-                <section class="sub-project" aria-labelledby="student-sixguns">
-                    <h4 id="student-sixguns">SixGuns</h4>
-
-                    <p>Details about the project go here...</p>
-                    <!-- TODO: Flesh out SixGuns details -->
-
-                    <div class="sub-project-tags">
-                        <span>Unity</span>
-                        <span>PubSub Architecture</span>
-                        <span>Dynamic UI</span>
-                    </div>
-                </section>
+                <div class="sub-project-tags">
+                    <span>Arduino</span>
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Serial Communication</span>
+                    <span>Research Handoff</span>
+                </div>
 
             </div>
         </div>
@@ -595,8 +540,7 @@
                         <span>Live Service QA</span>
                     </div>
                 </div>
-                <!-- TODO: Replace with DUI screenshot/video -->
-                <img class="card-poster" src="img/shrapnel/shrapnel-hero-image3.png"
+                <img class="card-poster" src="img/engagement-tracker/card.jpg"
                     alt="Engagement Tracking Tool" />
                 <video autoplay muted loop playsinline class="card-video" aria-hidden="true">
                     <source src="homepage_assets/shrapnel-hero.mov" type="video/mp4">
@@ -616,7 +560,7 @@
                         <span>Game Design</span>
                     </div>
                 </div>
-                <img class="card-poster" src="img/shrapnel/shrapnel-visualizer-tool.png"
+                <img class="card-poster" src="img/heatmap/visualizer-tool.png"
                     alt="Heatmap Visualizer tool" />
             </a>
 
@@ -632,8 +576,7 @@
                         <span>Technical Writing</span>
                     </div>
                 </div>
-                <!-- TODO: Replace with profiling screenshot -->
-                <img class="card-poster" src="img/shrapnel/shrapnel-hero-image.png"
+                <img class="card-poster" src="img/pso/card.jpg"
                     alt="PSO Optimization profiling" />
             </a>
 
@@ -649,8 +592,7 @@
                         <span>UI / UX</span>
                     </div>
                 </div>
-                <!-- TODO: Replace with radar screenshot -->
-                <img class="card-poster" src="img/radar/radar-screenshot.png"
+                <img class="card-poster" src="img/radar/screenshot.png"
                     alt="Radar Minimap UI prototype" />
             </a>
 
@@ -674,36 +616,20 @@
                 </video>
             </a>
 
-            <!-- Mobile Development -->
-            <a href="#mobiledev-overlay" class="card" aria-label="View Mobile Development project details">
+            <!-- VARScent -->
+            <a href="#varscent-overlay" class="card" aria-label="View VARScent project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h2>Mobile Development</h2>
-                    </div>
-                    <div class="tags">
-                        <span>Java</span>
-                        <span>Android Studio</span>
-                        <span>CodePath</span>
-                    </div>
-                </div>
-                <img class="card-poster" src="homepage_assets/android-hero.gif"
-                    alt="Android app development projects" />
-            </a>
-
-            <!-- Student Projects — combined -->
-            <a href="#student-overlay" class="card" aria-label="View Student Projects">
-                <div class="info-block">
-                    <div class="portfo_text">
-                        <h2>Student Projects</h2>
+                        <h2>VARScent</h2>
                     </div>
                     <div class="tags">
                         <span>Unity</span>
-                        <span>VR</span>
-                        <span>C#</span>
+                        <span>Arduino</span>
+                        <span>VR Research</span>
                     </div>
                 </div>
-                <img class="card-poster" src="homepage_assets/pknight-hero.gif"
-                    alt="Student game projects" />
+                <img class="card-poster" src="img/varscent/hero.png"
+                    alt="VARScent scent-in-VR research project" />
             </a>
 
         </div>

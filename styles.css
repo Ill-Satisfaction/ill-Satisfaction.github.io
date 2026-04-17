@@ -126,13 +126,19 @@ header {
 
 #byline {
     font-family: 'JetBrains Mono', monospace;
-    font-size: var(--text-4xl);
+    font-size: 3rem;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: var(--text-primary);
     margin-bottom: var(--space-sm);
     scroll-margin-top: var(--space-xl);
 }
+
+/* IDE-style syntax tokens for the byline */
+#byline .tok-name  { color: var(--text-primary); }
+#byline .tok-fn    { color: var(--accent); }
+#byline .tok-str   { color: var(--teal); }
+#byline .tok-punct { color: var(--text-secondary); }
 
 nav ul {
     list-style: none;
@@ -243,8 +249,7 @@ main {
     height: 100%;
     object-fit: cover;
     border-radius: var(--radius);
-    filter: brightness(0.35) saturate(0.6);
-    transition: opacity 0.5s ease, filter 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
     z-index: 1;
 }
 
@@ -255,17 +260,8 @@ main {
     height: 100%;
     object-fit: cover;
     border-radius: var(--radius);
-    filter: brightness(0.35) saturate(0.6);
-    transition: filter 0.5s ease, transform 0.5s ease;
+    transition: transform 0.5s ease;
     z-index: 0;
-}
-
-.card.hero .card-poster {
-    filter: brightness(0.55) saturate(0.85);
-}
-
-.card.hero .card-video {
-    filter: brightness(0.55) saturate(0.85);
 }
 
 .card:has(.card-video):hover .card-poster,
@@ -275,13 +271,11 @@ main {
 
 .card:has(.card-video):hover .card-video,
 .card:has(.card-video):focus-visible .card-video {
-    filter: brightness(0.75) saturate(1);
     transform: scale(1.03);
 }
 
 .card:not(:has(.card-video)):hover .card-poster,
 .card:not(:has(.card-video)):focus-visible .card-poster {
-    filter: brightness(0.65) saturate(0.9);
     transform: scale(1.03);
 }
 
