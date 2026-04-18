@@ -33,45 +33,70 @@
     <!-- OVERLAY: ENGAGEMENT TOOL   -->
     <!-- ========================== -->
     <div id="dui-overlay" class="overlay-wrapper">
-        <div class="overlay-content-wrapper" role="dialog" aria-label="Engagement Tracking Tool project details">
-        <a href="#byline" class="overlay-background" aria-label="Close Engagement Tracker details"></a>
+        <div class="overlay-content-wrapper" role="dialog" aria-label="Engagement Record project details">
+        <a href="#byline" class="overlay-background" aria-label="Close Engagement Record details"></a>
             <div class="overlay-content">
 
-                <h2>Engagement Tracking Tool</h2>
-                <h3>SDET — NeonMachine (Contract)</h3>
+                <h2>Engagement Record</h2>
+                <h3>SDET | NeonMachine (Contract)</h3>
 
                 <div class="tags negative" aria-label="Technologies used">
                     <span>Unreal Engine</span>
+                    <span>Blueprints</span>
                     <span>UI / UX</span>
-                    <span>Python</span>
-                    <span>Data Visualization</span>
                     <span>Live Service QA</span>
+                    <span>Data Visualization</span>
                 </div>
 
-                <div class="image-wrapper">
-                    <img class="hero" src="img/engagement-tracker/hero.jpg"
-                        alt="Engagement Tracking Tool interface" />
-                </div>
+                <p class="tldr"><span class="tldr-label">TL;DR:</span> Built a UE5 Widget Blueprint that sped up feature validation, regression, and tuning validation of 90+ operator perks for Shrapnel's Early Access launch. Conservative estimate of 360 QA hours saved by eliminated the need to scrub test footage for relevant metrics. </p>
 
-                <p>During my second stint at NeonMachine as an SDET, I built a UI-based engagement tracking
-                    tool that captured TTK, accuracy, and damage data during live playtests. The tool gave QA
-                    a way to validate per-feature balance without needing to manually scrub through replay data
-                    — cutting per-feature validation time by roughly 4 hours across 90+ features, saving an
-                    estimated 360 hours of testing effort.</p>
+                <figure class="img-caption-wrapper">
+                    <img class="img-regular" src="img/engagement-tracker/in-game-screenshot.png"
+                        alt="Engagement Record running live in a Shrapnel test area -- on-screen HUD shows damage, accuracy, and a session timer while the tester fires at labeled dummy targets" />
+                    <figcaption>Engagement Record Running in a Controlled Test Area</figcaption>
+                </figure>
 
-                <!-- TODO: Add video/screenshot of the tool in action here -->
+                <p>Shrapnel's character progression system was shipping with 90+ perks, and every one of them
+                    needed combat balance validation before release. The way QA was doing it was slow: run a
+                    session, capture footage, scrub back and forth, take notes on TTK, accuracy, and damage
+                    output, then try to piece together a writeup. Roughly 4 hours of work per perk. Nobody
+                    had a tool that could just show you what was happening while it happened.</p>
 
-                <p>This was part of a broader push I made during this contract to reduce bottlenecks — if
-                    someone on the team needed a tool or a process to do their job better, I'd rather just
-                    build it than wait for it to appear on a roadmap. This contract ran through early access
-                    launch, and I supported the product through weekly release testing cycles, surfacing
-                    critical issues as they came up.</p>
+                <p>So I built one. A UMG widget that sat on top of live gameplay and surfaced the metrics
+                    QA actually needed in real time: time-to-kill, hit accuracy, and detailed damage data,
+                    scoped to whatever test dummies or opponents were in the session. The screenshot above
+                    shows it running in a controlled test area -- stats update live, no scrubbing, no post
+                    session cleanup.</p>
+
+                <p>Under the hood, the capture layer was pure Blueprints,
+                    so weapon fire, damage, and kill events could broadcast into the tracker without touching
+                    the underlying gameplay code. That kept the tool non-invasive and easy to drop into any
+                    build without entangling it with the rest of the project.</p>
+
+                <figure class="img-caption-wrapper">
+                    <img class="img-regular" src="img/engagement-tracker/dui-blueprint-overview.png"
+                        alt="Top-level view of the engagement tracker's Blueprint project in Unreal Engine" />
+                    <figcaption>Top-Level View of the Tracker's Blueprint Project</figcaption>
+                </figure>
+
+                <p>Once the tool was in rotation, initial per-perk validation dropped from ~4 hours to
+                    roughly the length of a focused test session. And that 4-hour figure is just the first
+                    pass -- regressions and failed-fix cycles easily doubled it in practice, which makes the
+                    ~360 hours saved a conservative floor rather than a ceiling. QA could validate balance
+                    inside the loop instead of after the fact, and design got faster feedback on how tuning
+                    changes actually landed in-game.</p>
+
+                <h5>Source Code</h5>
+                <p>GitHub: <a class="text-link"
+                        href="https://github.com/Ill-Satisfaction/Shrapnel-Details-UI-Tool"
+                        target="_blank" rel="noopener noreferrer">Ill-Satisfaction/Shrapnel-Details-UI-Tool
+                        <i class="ri-external-link-fill" aria-hidden="true"></i></a></p>
 
                 <div class="sub-project-tags">
-                    <span>Unreal Engine</span>
-                    <span>Dynamic UI</span>
+                    <span>Blueprints</span>
+                    <span>UMG Widget</span>
+                    <span>Real-Time Metrics</span>
                     <span>Live Playtesting</span>
-                    <span>Data Capture</span>
                 </div>
 
             </div>
@@ -89,7 +114,7 @@
             <div class="overlay-content">
 
                 <h2>PSO Optimization</h2>
-                <h3>SDET — NeonMachine (Contract)</h3>
+                <h3>SDET | NeonMachine (Contract)</h3>
 
                 <div class="tags negative" aria-label="Technologies used">
                     <span>Unreal Engine 5</span>
@@ -153,7 +178,7 @@
             <div class="overlay-content">
 
                 <h2>Death Heatmap Visualizer</h2>
-                <h3>Senior Test Engineer — Lionbridge Games</h3>
+                <h3>Senior Test Engineer | Lionbridge Games</h3>
 
                 <div class="tags negative" aria-label="Technologies used">
                     <span>Python</span>
@@ -245,7 +270,7 @@
             <div class="overlay-content">
 
                 <h2>Radar Minimap UI</h2>
-                <h3>SDET — NeonMachine (Contract)</h3>
+                <h3>SDET | NeonMachine (Contract)</h3>
 
                 <div class="tags negative" aria-label="Technologies used">
                     <span>Unreal Engine 5</span>
@@ -301,7 +326,7 @@
         <a href="#byline" class="overlay-background" aria-label="Close NASA SUITS details"></a>
             <div class="overlay-content">
                 <h2>NASA SUITS</h2>
-                <h3>XR Developer &#x2192; Team Lead — Boise State University</h3>
+                <h3>XR Developer &#x2192; Team Lead | Boise State University</h3>
 
                 <div class="tags negative" aria-label="Technologies used">
                     <span>Unity</span>
@@ -315,10 +340,17 @@
                     <span>Technical Writing</span>
                 </div>
 
-                <div class="image-wrapper">
-                    <img class="hero" src="img/nasa-suits/hero.jpg"
-                        alt="NASA SUITS team working with VR equipment" />
-                </div>
+                <p class="tldr"><span class="tldr-label">TL;DR:</span>Three years on NASA's SUITS Challenge
+                    building AR tools for future lunar EVA. Built a hands-free spatial navigation system
+                    (Beacons + Minimap) in Unity/C#/MRTK for HoloLens 2 and Quest 2, then took over as Team
+                    Lead -- grew the team from 6 to 15 through COVID, co-authored 4 research papers, wrote a
+                    30-page proposal accepted by NASA, and demoed ARSIS 5.0 at Johnson Space Center.</p>
+
+                <figure class="img-caption-wrapper">
+                    <img class="img-regular" src="img/nasa-suits/jsc-prep.jpg"
+                        alt="Team preparing equipment for live testing at Johnson Space Center" />
+                    <figcaption>Preparation for Live Testing at JSC</figcaption>
+                </figure>
 
                 <span id="suits-quote-open" class="quote-anchor"></span>
 
@@ -348,30 +380,31 @@
                     </footer>
                 </blockquote>
 
-                <p>I spent three years on NASA's SUITS Challenge, building AR navigation and communication
-                    tools for future lunar EVA missions. The project used Unity, C#, and MRTK targeting
-                    HoloLens 2 and Quest 2. We tested in conditions that broke everything: high-reflectivity
-                    sand dunes, volcanic rock, caves with no natural lighting, and low-connectivity
-                    environments.</p>
-
-                <figure class="img-caption-wrapper">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/X4m33WfXC3w?si=NQrBMar3qwckt_Ee"
-                        title="ARSIS Overview video" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                        loading="lazy"></iframe>
-                    <figcaption>ARSIS Overview</figcaption>
-                </figure>
+                <p>NASA's SUITS Challenge asks university teams to prototype AR systems for the kinds of
+                    problems astronauts will hit on future lunar EVAs: GPS-less navigation, hands-free
+                    procedures, comms under stress, and lighting conditions that break most off-the-shelf
+                    tech. I spent three years on Boise State's entry, ARSIS (Augmented Reality Space
+                    Informatics System), across versions 4.0 and 5.0 -- year one as an XR developer, years
+                    two and three as team lead. The project ran on Unity, C#, and MRTK, targeting HoloLens 2
+                    and Quest 2. We tested in conditions that broke everything: high-reflectivity sand dunes,
+                    volcanic rock, caves with no natural lighting, and low-connectivity environments.</p>
 
                 <!-- === SUB-PROJECT: NAVIGATION TOOLS === -->
                 <section class="sub-project" aria-labelledby="suits-nav">
-                    <h4 id="suits-nav">AR Navigation — Beacons &amp; Minimap</h4>
+                    <h4 id="suits-nav">AR Navigation -- Beacons &amp; Minimap</h4>
 
-                    <p>My first year focused on building navigation features in C#. A lot of game-style UI
-                        patterns were untested in AR, so we went about testing them. I built a 'Beacons' system
-                        and a 'Minimap' — together, they let astronauts see points of interest through terrain
-                        and obstacles, with heading and distance, and navigate to them from far away.</p>
+                    <p>My first year focused on ARSIS's spatial navigation. A lot of game-style UI patterns
+                        had never been stress-tested in AR for hands-free HMD use, especially in scenarios
+                        where landmarks don't exist, GPS doesn't work, and the user is wearing pressure-suit
+                        gloves. The work ended up being equal parts engineering and research.</p>
+
+                    <p>I built two systems in Unity with C# and MRTK that were designed to work together: a
+                        'Beacons' system that surfaced mission-critical points of interest with heading and
+                        distance visible through terrain and obstacles, and a 'Minimap' -- a hands-free
+                        top-down view anchored to the user's position, showing the surrounding beacons in
+                        spatial context. Together they let test subjects acquire a target from a distance
+                        and navigate to it under the kind of conditions where every other spatial cue falls
+                        apart. We presented the system to NASA Artemis mission control over Zoom that cycle.</p>
 
                     <figure class="img-caption-wrapper">
                         <iframe width="560" height="315"
@@ -385,8 +418,10 @@
 
                     <div class="sub-project-tags">
                         <span>C#</span>
+                        <span>MRTK</span>
                         <span>AR UI</span>
                         <span>Spatial Navigation</span>
+                        <span>Hands-Free Interaction</span>
                     </div>
                 </section>
 
@@ -394,10 +429,13 @@
                 <section class="sub-project" aria-labelledby="suits-lead">
                     <h4 id="suits-lead">Team Lead &amp; Research</h4>
 
-                    <p>After my first year I took over as Team Lead. I grew the team from 6 to 15 members
-                        during COVID through targeted outreach, led design discussions to meet NASA challenge
-                        requirements, and wrote the majority of a 30-page technical proposal that was accepted
-                        by NASA and the Idaho Space Grant Consortium.</p>
+                    <p>After my first year I stepped into the Team Lead role just as COVID hit. Student
+                        research participation was collapsing across programs, and if the team couldn't hold
+                        together the project would stop. I ran targeted outreach through the lockdown and
+                        grew the team from 6 to 15 members, restructured the work around an Agile cycle so
+                        distributed contributors could stay aligned with NASA's challenge requirements, and
+                        wrote the majority of a 30-page technical proposal that was accepted by NASA and
+                        helped secure funding from the Idaho Space Grant Consortium.</p>
 
                     <figure class="img-caption-wrapper">
                         <a href="files/arsis-5-proposal.pdf" download class="file-download">
@@ -405,39 +443,44 @@
                         </a>
                     </figure>
 
-                    <p>We co-published 4 research papers (HCI International, SpaceCHI/MIT Media Lab) and
-                        presented and demonstrated the system at Johnson Space Center. We discovered a lot more
-                        "it doesn't work"s than "it works"s — but hey, that's research!</p>
+                    <p>We co-published 4 research papers across HCI International and SpaceCHI/MIT Media Lab,
+                        and presented and demonstrated ARSIS 5.0 at Johnson Space Center. We discovered a lot
+                        more "it doesn't work"s than "it works"s -- but hey, that's research!</p>
+
+                    <figure class="img-caption-wrapper">
+                        <img class="img-regular" src="img/nasa-suits/hero.jpg"
+                            alt="NASA SUITS team live testing VR equipment at Johnson Space Center" />
+                        <figcaption>Live Testing at JSC</figcaption>
+                    </figure>
+
+                    <figure class="img-caption-wrapper">
+                        <img class="img-regular" src="img/nasa-suits/jsc-recognition.jpg"
+                            alt="Team receiving recognition at Johnson Space Center" />
+                        <figcaption>Recognition at Johnson Space Center</figcaption>
+                    </figure>
 
                     <div class="sub-project-tags">
                         <span>Project Management</span>
+                        <span>Agile</span>
                         <span>Technical Writing</span>
                         <span>Published Research</span>
                         <span>NASA</span>
                     </div>
                 </section>
 
-                <figure class="img-caption-wrapper">
-                    <img class="img-regular" src="img/nasa-suits/jsc-prep.jpg"
-                        alt="Team preparing equipment for live testing at Johnson Space Center" />
-                    <figcaption>Preparation for Live Testing at JSC</figcaption>
-                </figure>
-
-                <p>The SUITS Challenge team is still operational today — something I'm quietly proud of,
+                <p>The SUITS Challenge team is still operational today -- something I'm quietly proud of,
                     given that keeping a student research group alive through COVID was its own kind of
                     engineering challenge. I remember the MRTK 2 to 3 migration throwing us into disarray,
                     and figuring out Git LFS for binary assets being its own adventure &#x1F606;</p>
 
                 <figure class="img-caption-wrapper">
-                    <img class="img-regular" src="img/nasa-suits/jsc-recognition.jpg"
-                        alt="Team receiving recognition at Johnson Space Center" />
-                    <figcaption>Recognition at Johnson Space Center</figcaption>
-                </figure>
-
-                <figure class="img-caption-wrapper">
-                    <img class="img-regular" src="img/nasa-suits/unity-environment.jpg"
-                        alt="Ground control portal built in Unity" />
-                    <figcaption>Ground Control Portal</figcaption>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/X4m33WfXC3w?si=NQrBMar3qwckt_Ee"
+                        title="ARSIS Overview video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                        loading="lazy"></iframe>
+                    <figcaption>ARSIS Overview</figcaption>
                 </figure>
 
                 <h5>More About NASA SUITS</h5>
@@ -470,7 +513,7 @@
             <div class="overlay-content">
 
                 <h2>VARScent</h2>
-                <h3>Research Developer — Boise State University (Paid Research)</h3>
+                <h3>Research Developer | Boise State University (Paid Research)</h3>
 
                 <div class="tags negative" aria-label="Technologies used">
                     <span>Unity</span>
@@ -528,20 +571,20 @@
         <div class="grid-wrapper">
 
             <!-- Engagement Tracking Tool (DUI) — big hero card -->
-            <a href="#dui-overlay" class="card big hero" aria-label="View Engagement Tracking Tool project details">
+            <a href="#dui-overlay" class="card big hero" aria-label="View Engagement Record project details">
                 <div class="info-block">
                     <div class="portfo_text">
-                        <h2>Engagement Tracker</h2>
+                        <h2>Engagement Record</h2>
                     </div>
                     <div class="tags">
                         <span>Unreal</span>
+                        <span>Blueprints</span>
                         <span>UI / UX</span>
-                        <span>Python</span>
                         <span>Live Service QA</span>
                     </div>
                 </div>
-                <img class="card-poster" src="img/engagement-tracker/card.jpg"
-                    alt="Engagement Tracking Tool" />
+                <img class="card-poster" src="img/engagement-tracker/card.png"
+                    alt="Engagement Record" />
                 <video autoplay muted loop playsinline class="card-video" aria-hidden="true">
                     <source src="homepage_assets/shrapnel-hero.mov" type="video/mp4">
                 </video>
@@ -655,3 +698,4 @@
 </body>
 
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

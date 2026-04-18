@@ -658,6 +658,30 @@ figcaption {
 }
 
 /* ================================
+   TLDR SUMMARY
+   ================================ */
+.tldr {
+    margin: var(--space-lg) 0 var(--space-xl);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-overlay-alt);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    font-size: var(--text-base);
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.tldr .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-right: var(--space-xs);
+}
+
+/* ================================
    SUB-PROJECTS
    ================================ */
 .sub-project {
