@@ -776,10 +776,42 @@ figcaption {
     box-shadow: 0 8px 30px rgba(245, 100, 118, 0.15);
 }
 
-.about-text p {
+.about-text p,
+.about-text li {
     font-size: var(--text-lg);
     line-height: 1.7;
-    color: var(--text-secondary);
+    color: var(--text-primary);
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-md) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: left;
+}
+
+.about-text li {
+    position: relative;
+    padding-left: 1.75rem;
+    line-height: 1.5;
+    font-size: var(--text-base);
+}
+
+.about-text li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+}
+
+.about-text .hl-what {
+    color: var(--accent);
 }
 
 /* ================================
